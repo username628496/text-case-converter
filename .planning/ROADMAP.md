@@ -32,8 +32,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 2 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Install next-intl v4, configure i18n routing + proxy, create translation files, build tool registry
-- [ ] 01-02-PLAN.md — Create app directory structure with locale layout, AdSense placeholders, page stubs, build verification, Vercel deploy
+- [x] 01-01-PLAN.md — Install next-intl v4, configure i18n routing + proxy, create translation files, build tool registry
+- [x] 01-02-PLAN.md — Create app directory structure with locale layout, AdSense placeholders, page stubs, build verification, Vercel deploy
 
 ### Phase 2: Core Case Converter
 **Goal**: Users can use a fully functional 7-mode case converter at the homepage, with complete SEO infrastructure (metadata, JSON-LD, hreflang) that serves as the validated template for all subsequent tool pages
@@ -45,10 +45,13 @@ Plans:
   3. The page renders correctly in dark mode when OS preference is dark (Tailwind `prefers-color-scheme`)
   4. The English homepage (`/`) and Vietnamese homepage (`/vi/`) each have unique `<title>`, `<meta name="description">`, canonical URL, and `og:image` in their respective languages
   5. Both locale pages include valid JSON-LD with SoftwareApplication + HowTo schema and bidirectional hreflang `<link rel="alternate">` tags pointing EN ↔ VI
-**Plans**: TBD
+**Plans**: 4 plans
 
 Plans:
-- [ ] 02-01: TBD
+- [ ] 02-01-PLAN.md — Case transform engine (7 functions + tests), i18n translations, CSS color system, og:image placeholder
+- [ ] 02-02-PLAN.md — SiteNav component with category dropdowns and locale switcher, layout integration
+- [ ] 02-03-PLAN.md — ToolPage interactive component, FAQ section, Related Tools section, homepage wiring
+- [ ] 02-04-PLAN.md — generateMetadata (title, description, canonical, hreflang), JSON-LD structured data
 
 ### Phase 3: Sub-Tools + SEO Infrastructure
 **Goal**: Four priority sub-tools are live at their own URLs (EN + VI each) with full SEO treatment, the sitemap is auto-generated with hreflang alternates, and related-tools navigation is wired up across all tool pages
@@ -86,6 +89,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation Infrastructure | 2/2 | Complete   | 2026-03-19 |
-| 2. Core Case Converter | 0/? | Not started | - |
+| 2. Core Case Converter | 0/4 | Not started | - |
 | 3. Sub-Tools + SEO Infrastructure | 0/? | Not started | - |
 | 4. Launch Readiness | 0/? | Not started | - |
