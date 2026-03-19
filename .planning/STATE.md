@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 01-01-PLAN.md (i18n foundation + tool registry)
-last_updated: "2026-03-19T17:02:00Z"
+stopped_at: "Checkpoint reached: 01-02 Task 2 (Vercel deployment verification)"
+last_updated: "2026-03-19T17:07:21.184Z"
 progress:
   total_phases: 4
-  completed_phases: 0
+  completed_phases: 1
   total_plans: 2
-  completed_plans: 1
+  completed_plans: 2
 ---
 
 # Project State
@@ -46,6 +46,7 @@ Plan: 2 of 2
 - Trend: -
 
 *Updated after each plan completion*
+| Phase 01 P02 | 5 | 1 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -61,6 +62,8 @@ Recent decisions affecting current work:
 - [01-01]: next-intl/middleware import confirmed valid for v4.8.3; ESM package requires Next.js build context — bare node -e test fails by design
 - [01-01]: Default export used in proxy.ts (createMiddleware return value); named export not needed
 - [01-01]: Vietnamese translations use ASCII approximations without diacritics as Phase 1 placeholders
+- [Phase 01]: src/app/page.tsx deleted — with as-needed localePrefix, proxy rewrites / to [locale=en]; root page.tsx caused route conflicts
+- [Phase 01]: lang attribute set to en in root layout as Phase 1 default; hreflang (Phase 3) is primary SEO locale signal
 
 ### Pending Todos
 
@@ -74,6 +77,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-19T17:02:00Z
-Stopped at: Completed 01-01-PLAN.md (i18n foundation + tool registry)
-Resume file: .planning/phases/01-foundation-infrastructure/01-02-PLAN.md
+Last session: 2026-03-19T17:07:21.181Z
+Stopped at: Checkpoint reached: 01-02 Task 2 (Vercel deployment verification)
+Resume file: None

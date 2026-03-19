@@ -40,9 +40,9 @@
 
 ### Infrastructure
 
-- [ ] **INFRA-01**: All pages are statically generated (SSG) via generateStaticParams — no server runtime required
-- [ ] **INFRA-02**: Root layout includes AdSense placeholder divs at 3 placements (header, sidebar, below-tool) with reserved CSS min-height (90px/250px/90px) — no live ads
-- [ ] **INFRA-03**: App deploys to Vercel via GitHub push to main — no output: 'export' (incompatible with next-intl proxy routing)
+- [x] **INFRA-01**: All pages are statically generated (SSG) via generateStaticParams — no server runtime required
+- [x] **INFRA-02**: Root layout includes AdSense placeholder divs at 3 placements (header, sidebar, below-tool) with reserved CSS min-height (90px/250px/90px) — no live ads
+- [x] **INFRA-03**: App deploys to Vercel via GitHub push to main — no output: 'export' (incompatible with next-intl proxy routing)
 
 ## v2 Requirements
 
@@ -82,9 +82,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| INFRA-01 | Phase 1 | Pending |
-| INFRA-02 | Phase 1 | Pending |
-| INFRA-03 | Phase 1 | Pending |
+| INFRA-01 | Phase 1 | Complete |
+| INFRA-02 | Phase 1 | Complete |
+| INFRA-03 | Phase 1 | Complete |
 | I18N-01 | Phase 1 | Complete |
 | I18N-02 | Phase 1 | Complete |
 | I18N-03 | Phase 1 | Complete |
