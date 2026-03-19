@@ -26,9 +26,9 @@
 
 ### Internationalization
 
-- [ ] **I18N-01**: All tool content is fully translated EN/VI via next-intl: tool names, descriptions, placeholder text, how-to copy, UI chrome, FAQ content
-- [ ] **I18N-02**: English pages use clean URLs without locale prefix: /[tool-slug]/
-- [ ] **I18N-03**: Vietnamese pages use /vi/[tool-slug]/ prefix
+- [x] **I18N-01**: All tool content is fully translated EN/VI via next-intl: tool names, descriptions, placeholder text, how-to copy, UI chrome, FAQ content
+- [x] **I18N-02**: English pages use clean URLs without locale prefix: /[tool-slug]/
+- [x] **I18N-03**: Vietnamese pages use /vi/[tool-slug]/ prefix
 - [ ] **I18N-04**: All pages include bidirectional hreflang EN ↔ VI (both locales reference each other)
 
 ### SEO
@@ -85,9 +85,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | INFRA-01 | Phase 1 | Pending |
 | INFRA-02 | Phase 1 | Pending |
 | INFRA-03 | Phase 1 | Pending |
-| I18N-01 | Phase 1 | Pending |
-| I18N-02 | Phase 1 | Pending |
-| I18N-03 | Phase 1 | Pending |
+| I18N-01 | Phase 1 | Complete |
+| I18N-02 | Phase 1 | Complete |
+| I18N-03 | Phase 1 | Complete |
 | CORE-01 | Phase 2 | Pending |
 | CORE-02 | Phase 2 | Pending |
 | CORE-03 | Phase 2 | Pending |
