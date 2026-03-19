@@ -1,0 +1,38 @@
+{
+  "common": {
+    "siteName": "Text Case Converter",
+    "languageSwitcher": {
+      "en": "English",
+      "vi": "Tieng Viet"
+    }
+  },
+  "tools": {
+    "caseConverter": {
+      "name": "Case Converter",
+      "description": "Convert text between different cases"
+    },
+    "reverseText": {
+      "name": "Reverse Text",
+      "description": "Reverse any text string"
+    },
+    "base64": {
+      "name": "Base64 Encode/Decode",
+      "description": "Encode and decode Base64 strings"
+    },
+    "slugGenerator": {
+      "name": "Slug Generator",
+      "description": "Generate URL-friendly slugs from text"
+    },
+    "passwordGenerator": {
+      "name": "Password Generator",
+      "description": "Generate secure random passwords"
+    }
+  },
+  "layout": {
+    "adPlaceholder": "Ad Space"
+  },
+  "home": {
+    "heading": "Text Case Converter",
+    "subheading": "Free online tool to convert text between different cases"
+  }
+}

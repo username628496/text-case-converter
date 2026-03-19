@@ -1,0 +1,38 @@
+{
+  "common": {
+    "siteName": "Chuyen Doi Chu Hoa Thuong",
+    "languageSwitcher": {
+      "en": "English",
+      "vi": "Tieng Viet"
+    }
+  },
+  "tools": {
+    "caseConverter": {
+      "name": "Chuyen doi chu hoa thuong",
+      "description": "Chuyen doi van ban giua cac kieu chu hoa thuong"
+    },
+    "reverseText": {
+      "name": "Dao nguoc van ban",
+      "description": "Dao nguoc bat ky chuoi van ban nao"
+    },
+    "base64": {
+      "name": "Ma hoa/Giai ma Base64",
+      "description": "Ma hoa va giai ma chuoi Base64"
+    },
+    "slugGenerator": {
+      "name": "Tao slug",
+      "description": "Tao slug than thien voi URL tu van ban"
+    },
+    "passwordGenerator": {
+      "name": "Tao mat khau",
+      "description": "Tao mat khau ngau nhien an toan"
+    }
+  },
+  "layout": {
+    "adPlaceholder": "Khong gian quang cao"
+  },
+  "home": {
+    "heading": "Chuyen Doi Chu Hoa Thuong",
+    "subheading": "Cong cu truc tuyen mien phi de chuyen doi van ban giua cac kieu chu hoa thuong"
+  }
+}
