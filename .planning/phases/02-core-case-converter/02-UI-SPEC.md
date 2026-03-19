@@ -70,7 +70,7 @@ Source: Spacing scale is the standard 8-point system. Exceptions derived from RE
 - H2 / section headings: `text-xl` (20px), `font-semibold`, `leading-tight`
 - Mono output textarea: `text-sm`, `font-mono`, `leading-relaxed`
 
-Source: Existing `src/app/[locale]/page.tsx` uses `text-3xl font-bold` for h1 and `text-lg` for subheading — confirmed. Mono output requirement from CORE-01 (textarea for converted text output). Two weights only: 400 + 600.
+Source: Existing `src/app/[locale]/page.tsx` uses `text-3xl font-bold` for h1 and `text-lg` for subheading. **Executor note:** The existing `text-lg` (18px) subheading must be updated to `text-xl` (20px) as part of Phase 2 to conform to the declared 4-size type scale — no 5th size may be introduced. Mono output requirement from CORE-01 (textarea for converted text output). Two weights only: 400 + 600.
 
 ---
 
@@ -78,18 +78,21 @@ Source: Existing `src/app/[locale]/page.tsx` uses `text-3xl font-bold` for h1 an
 
 | Role | Light Mode | Dark Mode | Usage |
 |------|------------|-----------|-------|
-| Dominant (60%) | `#ffffff` (`bg-white`) | `#0a0a0a` (`bg-zinc-950`) | Page background, textarea background |
-| Secondary (30%) | `zinc-50` (`#fafafa`) | `zinc-900` (`#18181b`) | Cards, tab bar background, ad slots, FAQ section background |
-| Accent (10%) | `zinc-900` (`#18181b`) | `zinc-100` (`#f4f4f5`) | Active tab indicator, primary CTA button background, "Copied!" state badge |
-| Border | `zinc-200` | `zinc-800` | All dividers, input borders, tab borders |
-| Text primary | `zinc-900` | `zinc-100` | Body copy, headings, textarea text |
+| Dominant (60%) | `#e8f5f0` (mint/teal page background) | `#0a0a0a` (`bg-zinc-950`) | Page background (replaces white — brand differentiator vs generic tools) |
+| Secondary (30%) | `#ffffff` | `zinc-900` (`#18181b`) | Textarea background, cards, ad slots, FAQ section background |
+| Accent (10%) | `#0d9488` (teal-600) | `#14b8a6` (teal-500) | Active tab badge, "Copy" CTA button background, "Copied!" state badge, nav hover indicators |
+| Border | `#b2d8ce` (teal-tinted border) | `zinc-700` | All dividers, input borders |
+| Text primary | `zinc-900` (`#18181b`) | `zinc-100` | Body copy, headings, textarea text |
 | Text secondary | `zinc-600` | `zinc-400` | Sub-labels, placeholder text, character/word count display |
 | Text muted | `zinc-500` | `zinc-500` | Timestamp hints, ad placeholder copy |
 | Destructive | `red-600` | `red-500` | Clear button label (text only — no filled destructive button in Phase 2) |
+| Nav hover | `teal-700` (`#0f766e`) | `teal-400` | Navigation link hover state |
 
-Accent reserved for: active tab underline/indicator, "Copy" CTA button background, "Copied!" confirmation badge background. Do NOT use accent on inactive tabs, borders, body copy, or secondary actions.
+Accent (`#0d9488` teal) reserved for: active/selected tab badge background, "Copy" CTA button background, "Copied!" confirmation badge background, nav active indicators. Do NOT use accent on inactive tabs, borders, body copy, or secondary actions.
 
-Source: `globals.css` declares `#ffffff`/`#0a0a0a` background and `#171717`/`#ededed` foreground. Existing layout uses `zinc-*` palette throughout. Dark mode via `@media (prefers-color-scheme: dark)` — requirement CORE-08.
+**Tailwind custom color:** Teal values must be added to `globals.css` as CSS custom properties if not natively available in Tailwind v4 config: `--color-accent: #0d9488; --color-accent-dark: #14b8a6; --color-bg-page: #e8f5f0;`
+
+Source: User design decision (2026-03-20) — mint/teal palette modeled on convertcase.net for brand differentiation. Dark mode via `@media (prefers-color-scheme: dark)` — requirement CORE-08.
 
 ---
 
@@ -104,9 +107,6 @@ The primary interactive component. Contains all state: inputText, activeMode, is
 <section>
   <h1>  — Tool title (from i18n)
   <p>   — Tool description (from i18n)
-  <div class="tab-bar">
-    7 × <button role="tab"> — one per case mode
-  </div>
   <textarea>  — unified input/output textarea (single textarea pattern)
   <div class="toolbar">
     <span>  — character count display
@@ -114,33 +114,94 @@ The primary interactive component. Contains all state: inputText, activeMode, is
     <button> — Copy CTA
     <button> — Clear
   </div>
+  <div class="tab-bar" role="tablist">
+    7 × <button role="tab"> — pill/badge style, one per case mode
+  </div>
 </section>
 ```
 
-**Tab bar — 7 modes:**
-1. Sentence case
-2. lower case
-3. UPPER CASE
-4. Capitalized Case
-5. aLtErNaTiNg CaSe
-6. Title Case
-7. iNVERSE cAsE
+**Tab position:** Tabs appear BELOW the textarea and toolbar. This matches the convertcase.net UX pattern — user sees output, then selects mode below.
 
-Active tab: `border-b-2 border-zinc-900 dark:border-zinc-100 font-semibold text-zinc-900 dark:text-zinc-100`
-Inactive tab: `border-b-2 border-transparent text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300`
+**Tab bar — 7 modes (pill/badge style):**
+
+Each tab is a pill button with a short colored abbreviation badge on the left + full mode label:
+
+| # | Badge | Full Label | Badge color (active accent) |
+|---|-------|------------|-----------------------------|
+| 1 | `Sc` | Sentence case | teal |
+| 2 | `lc` | lower case | teal |
+| 3 | `UC` | UPPER CASE | teal |
+| 4 | `Cc` | Capitalized Case | teal |
+| 5 | `aA` | aLtErNaTiNg | teal |
+| 6 | `Tc` | Title Case | teal |
+| 7 | `iV` | iNVERSE | teal |
+
+**Active tab pill:** `inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal-600 dark:bg-teal-500 text-white font-semibold text-sm`
+— badge: `inline-flex items-center justify-center w-6 h-6 rounded bg-white/20 text-xs font-bold`
+
+**Inactive tab pill:** `inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-zinc-800 border border-[#b2d8ce] dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 text-sm hover:border-teal-600 dark:hover:border-teal-500 hover:text-teal-700 dark:hover:text-teal-400`
+— badge: `inline-flex items-center justify-center w-6 h-6 rounded bg-zinc-100 dark:bg-zinc-700 text-zinc-500 dark:text-zinc-400 text-xs font-bold`
+
+Tab bar container: `flex flex-wrap gap-2 mt-4`
 
 **Textarea:**
 - Min-height: 160px
 - Resize: vertical only (`resize-y`)
-- Classes: `w-full min-h-[160px] resize-y rounded-md border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-950 px-4 py-3 text-sm font-mono text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-900 dark:focus:ring-zinc-100`
+- Classes: `w-full min-h-[160px] resize-y rounded-md border border-[#b2d8ce] dark:border-zinc-700 bg-white dark:bg-zinc-950 px-4 py-3 text-sm font-mono text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-teal-600 dark:focus:ring-teal-500`
 - Placeholder text: from i18n key (e.g. "Type or paste your text here…")
 
 **Toolbar row:**
 - Character count: `text-sm text-zinc-500`
 - Word count: `text-sm text-zinc-500`
-- Copy button (normal): `px-4 py-2 rounded-md bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-semibold hover:bg-zinc-700 dark:hover:bg-zinc-300 transition-colors`
-- Copy button (copied state): `px-4 py-2 rounded-md bg-zinc-500 text-white text-sm font-semibold` — label changes to "Copied!" for ~1500ms then reverts
+- Copy button (normal): `px-4 py-2 rounded-md bg-teal-600 dark:bg-teal-500 text-white text-sm font-semibold hover:bg-teal-700 dark:hover:bg-teal-400 transition-colors`
+- Copy button (copied state): `px-4 py-2 rounded-md bg-teal-500 opacity-80 text-white text-sm font-semibold` — label changes to "Copied!" for ~1500ms then reverts
 - Clear button: `text-sm text-red-600 dark:text-red-500 hover:underline` — text-only, no background fill
+
+### SiteNav (Server Component or Client Component)
+
+Full navigation header with category dropdown menus + locale switcher. Rendered in `[locale]/layout.tsx` above `<main>`.
+
+**Structure:**
+```
+<nav>
+  <a href="/">  — Logo / site name "Text Case Converter"
+  <div class="nav-links">
+    <div class="dropdown"> — "Text Tools"
+      <button>Text Tools ▾</button>
+      <ul> — links to text tool pages (Phase 3+)
+    </div>
+    <div class="dropdown"> — "Code & Data"
+      <button>Code & Data ▾</button>
+      <ul> — links to code/data tool pages (future phases)
+    </div>
+    <div class="dropdown"> — "Font Styles"
+      <button>Font Styles ▾</button>
+      <ul> — links to font style pages (future phases)
+    </div>
+    <div class="dropdown"> — "Random Generators"
+      <button>Random Generators ▾</button>
+      <ul> — links to random generator pages (future phases)
+    </div>
+  </div>
+  <div class="locale-switcher">
+    <a href="/"> EN </a>
+    <a href="/vi/"> VI </a>
+  </div>
+</nav>
+```
+
+**Nav styling:**
+- Background: `bg-white dark:bg-zinc-900` (white card on mint page background)
+- Border-bottom: `border-b border-[#b2d8ce] dark:border-zinc-700`
+- Logo: `font-semibold text-zinc-900 dark:text-zinc-100 text-base`
+- Nav links: `text-sm text-zinc-700 dark:text-zinc-300 hover:text-teal-700 dark:hover:text-teal-400`
+- Active locale: `font-semibold text-teal-600 dark:text-teal-500`
+- Inactive locale: `text-zinc-500 dark:text-zinc-400 hover:text-teal-600`
+- Dropdown panel: `bg-white dark:bg-zinc-800 border border-[#b2d8ce] dark:border-zinc-700 rounded-lg shadow-sm`
+
+**Phase 2 scope:** In Phase 2, dropdown menus render with placeholder/empty link lists (tool pages don't exist yet). The nav structure is implemented as the permanent template — future phases populate the link items. Dropdowns open on hover (desktop) and tap (mobile). No JavaScript framework — CSS hover or minimal client component.
+
+**Locale switcher:** Shows current locale as active (teal, semibold). Switching locale navigates to the equivalent URL per existing i18n routing from Phase 1.
 
 ### FAQ Section (Server Component)
 
@@ -185,18 +246,22 @@ Rendered as first child of the page section, before ToolPage. Inline `<script ty
 
 | Component | State | Visual Treatment |
 |-----------|-------|-----------------|
-| Tab button | Default/inactive | `text-zinc-500`, no bottom border |
-| Tab button | Hover | `text-zinc-700 dark:text-zinc-300` |
-| Tab button | Active | `text-zinc-900 dark:text-zinc-100`, `border-b-2 border-zinc-900 dark:border-zinc-100`, `font-semibold` |
-| Textarea | Default | `border-zinc-200 dark:border-zinc-700` |
-| Textarea | Focus | `ring-2 ring-zinc-900 dark:ring-zinc-100` |
+| Tab pill | Default/inactive | White pill, teal-tinted border, zinc text (see Component Inventory) |
+| Tab pill | Hover | `border-teal-600`, `text-teal-700` |
+| Tab pill | Active | Filled `bg-teal-600 dark:bg-teal-500`, white text, teal badge chip |
+| Textarea | Default | `border-[#b2d8ce] dark:border-zinc-700`, `bg-white dark:bg-zinc-950` |
+| Textarea | Focus | `ring-2 ring-teal-600 dark:ring-teal-500` |
 | Textarea | Empty | Shows placeholder text in `text-zinc-400` |
-| Copy button | Default | Filled `bg-zinc-900 dark:bg-zinc-100` |
-| Copy button | Hover | `bg-zinc-700 dark:bg-zinc-300` |
-| Copy button | Copied (1500ms) | Label: "Copied!", background: `bg-zinc-500` |
+| Copy button | Default | Filled `bg-teal-600 dark:bg-teal-500` white text |
+| Copy button | Hover | `bg-teal-700 dark:bg-teal-400` |
+| Copy button | Copied (1500ms) | Label: "Copied!", background: `bg-teal-500 opacity-80` |
 | Clear button | Default | `text-red-600 dark:text-red-500` |
 | Clear button | Hover | `underline` added |
 | Char/word count | Live | Updates synchronously with textarea `onChange` |
+| Nav dropdown | Closed | Button with `▾` chevron |
+| Nav dropdown | Open | Panel visible, chevron rotated 180° |
+| Locale link | Active locale | `text-teal-600 font-semibold` |
+| Locale link | Inactive | `text-zinc-500 hover:text-teal-600` |
 
 **Animation:** Copy button state transition uses `transition-colors duration-150`. No other animations in Phase 2.
 
@@ -269,7 +334,7 @@ Max content width: `max-w-6xl` — already set on the layout wrapper. The ToolPa
 | Count display | `aria-live="polite"` on the count container so screen readers announce updates |
 | Dark mode | Implemented via OS preference (`prefers-color-scheme`) — no ARIA needed |
 | Minimum touch target | 44px height on all tab buttons and action buttons |
-| Focus ring | `focus:outline-none focus:ring-2 focus:ring-zinc-900 dark:focus:ring-zinc-100` on all interactive elements |
+| Focus ring | `focus:outline-none focus:ring-2 focus:ring-teal-600 dark:focus:ring-teal-500` on all interactive elements |
 
 ---
 
@@ -304,11 +369,11 @@ No third-party component registries are used in Phase 2. All UI is hand-built wi
 
 ## Checker Sign-Off
 
-- [ ] Dimension 1 Copywriting: PASS
-- [ ] Dimension 2 Visuals: PASS
-- [ ] Dimension 3 Color: PASS
-- [ ] Dimension 4 Typography: PASS
-- [ ] Dimension 5 Spacing: PASS
-- [ ] Dimension 6 Registry Safety: PASS
+- [x] Dimension 1 Copywriting: FLAG (non-blocking — single-word CTAs, aria-labels cover accessibility)
+- [x] Dimension 2 Visuals: FLAG (non-blocking — focal point derivable from contracts)
+- [x] Dimension 3 Color: PASS
+- [x] Dimension 4 Typography: PASS
+- [x] Dimension 5 Spacing: PASS
+- [x] Dimension 6 Registry Safety: PASS
 
-**Approval:** pending
+**Approval:** APPROVED 2026-03-20 (revised with user design decisions: mint background, tabs below textarea, pill/badge tab style, teal accent, full site nav)
