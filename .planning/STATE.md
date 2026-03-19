@@ -3,8 +3,8 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: "Checkpoint reached: 01-02 Task 2 (Vercel deployment verification)"
-last_updated: "2026-03-19T17:07:21.184Z"
+stopped_at: Completed 01-02-PLAN.md — Phase 1 complete
+last_updated: "2026-03-19T17:30:23.233Z"
 progress:
   total_phases: 4
   completed_phases: 1
@@ -47,6 +47,7 @@ Plan: 2 of 2
 
 *Updated after each plan completion*
 | Phase 01 P02 | 5 | 1 tasks | 4 files |
+| Phase 01-foundation-infrastructure P02 | 1 day | 2 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -64,6 +65,8 @@ Recent decisions affecting current work:
 - [01-01]: Vietnamese translations use ASCII approximations without diacritics as Phase 1 placeholders
 - [Phase 01]: src/app/page.tsx deleted — with as-needed localePrefix, proxy rewrites / to [locale=en]; root page.tsx caused route conflicts
 - [Phase 01]: lang attribute set to en in root layout as Phase 1 default; hreflang (Phase 3) is primary SEO locale signal
+- [Phase 01-foundation-infrastructure]: proxy.ts must live in src/ for Next.js 16 — project root placement silently ignored; moved during Vercel debugging
+- [Phase 01-foundation-infrastructure]: localeDetection: false set in routing.ts — as-needed prefix conflicts with Accept-Language auto-redirect on real browsers
 
 ### Pending Todos
 
@@ -77,6 +80,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-19T17:07:21.181Z
-Stopped at: Checkpoint reached: 01-02 Task 2 (Vercel deployment verification)
+Last session: 2026-03-19T17:30:23.230Z
+Stopped at: Completed 01-02-PLAN.md — Phase 1 complete
 Resume file: None
