@@ -29,10 +29,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. The root layout renders AdSense placeholder divs at all three placements (header, sidebar, below-tool) with correct reserved CSS min-height values (90px / 250px / 90px)
   4. All pages are statically generated — `next build` completes with no server runtime required and no `output: 'export'` flag
   5. Pushing to main on GitHub triggers a successful Vercel deployment and the preview URL resolves correctly
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 01-01: TBD
+- [ ] 01-01-PLAN.md — Install next-intl v4, configure i18n routing + proxy, create translation files, build tool registry
+- [ ] 01-02-PLAN.md — Create app directory structure with locale layout, AdSense placeholders, page stubs, build verification, Vercel deploy
 
 ### Phase 2: Core Case Converter
 **Goal**: Users can use a fully functional 7-mode case converter at the homepage, with complete SEO infrastructure (metadata, JSON-LD, hreflang) that serves as the validated template for all subsequent tool pages
@@ -84,7 +85,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation Infrastructure | 0/? | Not started | - |
+| 1. Foundation Infrastructure | 0/2 | Planning complete | - |
 | 2. Core Case Converter | 0/? | Not started | - |
 | 3. Sub-Tools + SEO Infrastructure | 0/? | Not started | - |
 | 4. Launch Readiness | 0/? | Not started | - |
