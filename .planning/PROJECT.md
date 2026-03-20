@@ -45,6 +45,15 @@ Fast, accurate text tools on SEO-optimized pages that rank for both English and 
 - [x] Typography scale: H1=30px, H2=20px, body=15px, stats=13px across all tool components — Validated in Phase 05: visual-foundation
 - [x] 3-tier border radius: 0px (FAQ), 4px (buttons/badges/tabs/chips/nav), 6px (cards/inputs/textareas) — Validated in Phase 05: visual-foundation
 
+### Validated (Phase 06: component-fixes-content)
+
+- [x] Duplicate filled Copy button removed from toolbar on all 5 tool pages — Validated in Phase 06: component-fixes-content
+- [x] Horizontal tab scrolling at narrow viewports fixed (ScrollArea + ScrollBar) — Validated in Phase 06: component-fixes-content
+- [x] Locale switcher shows full "Tiếng Việt" label — Validated in Phase 06: component-fixes-content
+- [x] FAQ redesigned with HelpCircle icon, navy left border accent, no hover underline — Validated in Phase 06: component-fixes-content
+- [x] "How It Works" homepage section with 7 mode cards (badge, name, description, before/after examples) — Validated in Phase 06: component-fixes-content
+- [x] Full EN and VI translations for all 7 How It Works mode cards — Validated in Phase 06: component-fixes-content
+
 ### Active
 
 - [ ] Remaining 30+ sub-tool pages (Text Tools, Code & Data, Font Styles, Random) — real implementations, shipped after core
@@ -90,7 +99,7 @@ Fast, accurate text tools on SEO-optimized pages that rank for both English and 
 
 ## Current Milestone: v1.1 UI Polish
 
-**Phase 05 complete** — Visual foundation shipped (fonts, colors, typography, border radius)
+**Phase 06 complete** — Component fixes and How It Works section shipped
 
 **Goal:** Polish visual design, fix structural issues, and add missing UI components (footer, sidebar nav, mode explanations) before Google Search Console submission and AdSense activation.
 
@@ -110,7 +119,7 @@ Fast, accurate text tools on SEO-optimized pages that rank for both English and 
 
 ## Current State
 
-v1.0 milestone complete — all 4 phases shipped. Production live at https://convertcase.uk with 5 tools (case converter + 4 sub-tools), bilingual EN/VI, full SEO (JSON-LD, hreflang, sitemap, robots.txt), Core Web Vitals in Good range. All 9 launch quality gates passed. 59 tests passing. v1.1 UI Polish milestone started.
+Phase 06 complete — component fixes and How It Works section shipped. Toolbar deduplication done, tab scroll fixed, locale switcher label updated, FAQ redesigned, and 7-mode How It Works section added to homepage with full EN/VI translations. Next: Phase 07 navigation + layout.
 
 ---
-*Last updated: 2026-03-20 after v1.1 milestone start*
+*Last updated: 2026-03-20 after Phase 06 completion*
