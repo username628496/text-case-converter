@@ -13,7 +13,7 @@ Starting from a fresh Next.js scaffold, this roadmap builds a multilingual (EN/V
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation Infrastructure** - Next.js 16 + next-intl v4 locale routing, tool registry, root layout with AdSense placeholders, Vercel deployment pipeline (completed 2026-03-19)
-- [ ] **Phase 2: Core Case Converter** - Fully functional 7-mode homepage tool with complete SEO treatment (metadata, JSON-LD, hreflang) establishing the template for all tool pages
+- [x] **Phase 2: Core Case Converter** - Fully functional 7-mode homepage tool with complete SEO treatment (metadata, JSON-LD, hreflang) establishing the template for all tool pages (completed 2026-03-20)
 - [ ] **Phase 3: Sub-Tools + SEO Infrastructure** - Four priority sub-tools (Reverse Text, Base64, Slug Generator, Password Generator) plus sitemap.ts and robots.ts
 - [ ] **Phase 4: Launch Readiness** - Core Web Vitals audit, Rich Results Test validation, hreflang verification, live deployment
 
@@ -89,6 +89,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation Infrastructure | 2/2 | Complete   | 2026-03-19 |
-| 2. Core Case Converter | 3/4 | In Progress|  |
+| 2. Core Case Converter | 4/4 | Complete   | 2026-03-20 |
 | 3. Sub-Tools + SEO Infrastructure | 0/? | Not started | - |
 | 4. Launch Readiness | 0/? | Not started | - |

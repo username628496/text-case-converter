@@ -59,10 +59,10 @@ completed: 2026-03-20
 
 ## Performance
 
-- **Duration:** ~5 min
+- **Duration:** ~15 min
 - **Started:** 2026-03-20T03:34:00Z
-- **Completed:** 2026-03-20T03:39:00Z
-- **Tasks:** 1 (+ checkpoint awaiting human verify)
+- **Completed:** 2026-03-20T03:48:22Z
+- **Tasks:** 2 (1 auto + 1 checkpoint:human-verify — approved)
 - **Files modified:** 1
 
 ## Accomplishments
@@ -76,8 +76,9 @@ completed: 2026-03-20
 ## Task Commits
 
 1. **Task 1: Complete page.tsx with generateMetadata and page assembly** - `944db7c` (feat)
+2. **Task 2: Verify complete homepage** - checkpoint approved by human (no code changes)
 
-**Plan metadata:** TBD (docs commit after checkpoint)
+**Plan metadata:** `2db7e20` (docs: complete homepage assembly plan)
 
 ## Files Created/Modified
 
@@ -103,16 +104,17 @@ None - no external service configuration required.
 
 ## Next Phase Readiness
 
-- Complete homepage assembled and passing build — ready for human verification
-- All Phase 2 core components wired together and functional
-- SEO infrastructure (generateMetadata + JSON-LD) established as template for Phase 3 tool pages
-- Awaiting checkpoint: human must verify visual correctness at http://localhost:3000/
+- Complete homepage human-verified: all 7 case modes, copy/clear/download, FAQ accordion, dark mode, Vietnamese locale with proper diacritics, SEO metadata, JSON-LD in page source
+- All Phase 2 (core-case-converter) plans complete — phase fully delivered
+- SEO infrastructure (generateMetadata + JSON-LD @graph) established as template for Phase 3 tool pages
+- Requirements completed: SEO-01, SEO-02, I18N-04, CORE-06, CORE-07
 
 ## Self-Check: PASSED
 
 - FOUND: src/app/[locale]/page.tsx
 - FOUND: .planning/phases/02-core-case-converter/02-04-SUMMARY.md
 - FOUND: commit 944db7c (feat(02-04): complete homepage page.tsx with generateMetadata and page assembly)
+- Human verification: APPROVED
 
 ---
 *Phase: 02-core-case-converter*
