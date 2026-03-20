@@ -18,11 +18,11 @@
 
 ### Sub-Tools
 
-- [ ] **TOOL-01**: User can reverse any text string at /reverse-text/ (EN) and /vi/reverse-text/ (VI)
-- [ ] **TOOL-02**: User can encode and decode Base64 strings at /base64-encode-decode/ (EN) and /vi/base64-encode-decode/ (VI)
-- [ ] **TOOL-03**: User can generate URL-friendly slugs from text at /slug-generator/ (EN) and /vi/slug-generator/ (VI)
-- [ ] **TOOL-04**: User can generate secure random passwords at /password-generator/ (EN) and /vi/password-generator/ (VI)
-- [ ] **TOOL-05**: All sub-tools have the same UX as the core tool: instant conversion, copy, char/word count, clear, FAQ content, related tools
+- [x] **TOOL-01**: User can reverse any text string at /reverse-text/ (EN) and /vi/reverse-text/ (VI)
+- [x] **TOOL-02**: User can encode and decode Base64 strings at /base64-encode-decode/ (EN) and /vi/base64-encode-decode/ (VI)
+- [x] **TOOL-03**: User can generate URL-friendly slugs from text at /slug-generator/ (EN) and /vi/slug-generator/ (VI)
+- [x] **TOOL-04**: User can generate secure random passwords at /password-generator/ (EN) and /vi/password-generator/ (VI)
+- [x] **TOOL-05**: All sub-tools have the same UX as the core tool: instant conversion, copy, char/word count, clear, FAQ content, related tools
 
 ### Internationalization
 
@@ -101,11 +101,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | I18N-04 | Phase 2 | Complete |
 | SEO-03 | Phase 3 | Pending |
 | SEO-04 | Phase 3 | Pending |
-| TOOL-01 | Phase 3 | Pending |
-| TOOL-02 | Phase 3 | Pending |
-| TOOL-03 | Phase 3 | Pending |
-| TOOL-04 | Phase 3 | Pending |
-| TOOL-05 | Phase 3 | Pending |
+| TOOL-01 | Phase 3 | Complete |
+| TOOL-02 | Phase 3 | Complete |
+| TOOL-03 | Phase 3 | Complete |
+| TOOL-04 | Phase 3 | Complete |
+| TOOL-05 | Phase 3 | Complete |
 
 **Coverage:**
 - v1 requirements: 23 total
