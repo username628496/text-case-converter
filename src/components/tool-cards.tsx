@@ -44,7 +44,7 @@ export function ToolCards({ locale, toolNames }: ToolCardsProps) {
                   {names.name}
                 </a>
               </div>
-              <p className="text-xs text-zinc-500 dark:text-zinc-400">{names.description}</p>
+              <p className="text-[13px] text-zinc-500 dark:text-zinc-400">{names.description}</p>
             </CardContent>
           </Card>
         )
@@ -78,7 +78,7 @@ export function RelatedTools({ heading, locale, relatedSlugs, toolNames }: Relat
     <section aria-labelledby="related-heading" className="mt-8">
       <h2
         id="related-heading"
-        className="text-lg font-semibold text-[var(--color-navy)] dark:text-zinc-200 mb-3"
+        className="text-xl font-semibold text-[var(--color-navy)] dark:text-zinc-200 mb-3"
       >
         {heading}
       </h2>
