@@ -66,7 +66,9 @@ export function RelatedTools({ heading, locale, relatedSlugs, toolNames }: Relat
       const tool = tools.find(t => t.slug === slug)
       if (!tool) return null
       const display = TOOL_DISPLAY[slug] || { abbr: '?', color: '#71717a' }
-      const href = locale === 'en' ? `/${slug}/` : `/vi/${slug}/`
+      const href = tool.isHomepage
+        ? locale === 'en' ? '/' : '/vi/'
+        : locale === 'en' ? `/${slug}/` : `/vi/${slug}/`
       const names = toolNames[tool.i18nKey] || { name: slug }
       return { slug, href, display, name: names.name }
     })
