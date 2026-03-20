@@ -96,5 +96,14 @@
     "step2": "Select a case mode tab (Sentence, lower, UPPER, Capitalized, Alternating, Title, or Inverse)",
     "step3": "Your text converts instantly as you select the tab",
     "step4": "Click the Copy button to copy the converted text to your clipboard"
+  },
+  "nav": {
+    "textTools": "Text Tools",
+    "codeData": "Code & Data",
+    "fontStyles": "Font Styles",
+    "randomGenerators": "Random Generators",
+    "toggleDark": "Toggle dark mode",
+    "switchLocale": "Switch language",
+    "menu": "Open menu"
   }
 }
