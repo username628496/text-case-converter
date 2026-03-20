@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 02-core-case-converter/02-01-PLAN.md
-last_updated: "2026-03-20T03:27:47.023Z"
+stopped_at: Completed 02-core-case-converter/02-02-PLAN.md
+last_updated: "2026-03-20T03:31:54.294Z"
 progress:
   total_phases: 4
   completed_phases: 1
   total_plans: 6
-  completed_plans: 3
+  completed_plans: 5
 ---
 
 # Project State
@@ -49,6 +49,8 @@ Plan: 2 of 4
 | Phase 01 P02 | 5 | 1 tasks | 4 files |
 | Phase 01-foundation-infrastructure P02 | 1 day | 2 tasks | 6 files |
 | Phase 02-core-case-converter P01 | 4 min | 2 tasks | 10 files |
+| Phase 02-core-case-converter P02 | 2 min | 2 tasks | 4 files |
+| Phase 02-core-case-converter P03 | 1 min | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -71,6 +73,10 @@ Recent decisions affecting current work:
 - [Phase 02-core-case-converter]: ThemeProvider approach for dark mode: next-themes with defaultTheme=system enableSystem satisfies CORE-08 and enables future manual toggle
 - [Phase 02-core-case-converter]: vi.json full rewrite: fixed ASCII approximations to proper Vietnamese Unicode diacritics in one commit
 - [Phase 02-core-case-converter]: Vitest v4 (not Jest): ESM-native, no Babel needed for React 19/TypeScript
+- [Phase 02-core-case-converter]: Header ad slot kept above SiteNav (not inside it) — preserves layout structure from Plan 01
+- [Phase 02-core-case-converter]: resolvedTheme used (not theme) for dark mode toggle to avoid 'system' string
+- [Phase 02-core-case-converter]: ToolPage uses useTranslations() hook directly since NextIntlClientProvider is already in layout.tsx
+- [Phase 02-core-case-converter]: JsonLd escapes < to \u003c per Next.js 16 json-ld.md docs for XSS safety
 
 ### Pending Todos
 
@@ -84,6 +90,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-20T03:27:47.020Z
-Stopped at: Completed 02-core-case-converter/02-01-PLAN.md
+Last session: 2026-03-20T03:31:45.896Z
+Stopped at: Completed 02-core-case-converter/02-02-PLAN.md
 Resume file: None
