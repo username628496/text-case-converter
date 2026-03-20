@@ -79,10 +79,11 @@ Plans:
   2. Google Rich Results Test passes for SoftwareApplication + HowTo schema on the homepage and at least one sub-tool page
   3. Each EN tool page and its VI counterpart both include bidirectional hreflang tags — the EN page references the VI page and vice versa, with no self-referential mismatches
   4. The production Vercel URL serves the correct locale for `/` (English) and `/vi/` (Vietnamese) with correct HTTP status codes — no 404s or redirect loops
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 04-01: TBD
+- [ ] 04-01-PLAN.md — Lighthouse CWV audit, hreflang verification, locale routing checks, sitemap/robots accessibility
+- [ ] 04-02-PLAN.md — Fix any quality gate failures + human verification of production deployment
 
 ## Progress
 
@@ -94,4 +95,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | 1. Foundation Infrastructure | 2/2 | Complete   | 2026-03-19 |
 | 2. Core Case Converter | 4/4 | Complete   | 2026-03-20 |
 | 3. Sub-Tools + SEO Infrastructure | 4/4 | Complete   | 2026-03-20 |
-| 4. Launch Readiness | 0/? | Not started | - |
+| 4. Launch Readiness | 0/2 | Not started | - |
