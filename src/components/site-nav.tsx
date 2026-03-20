@@ -115,7 +115,7 @@ export function SiteNav({ locale, siteName, translations }: SiteNavProps) {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" size="sm" className="text-sm" aria-label={translations.switchLocale}>
-                {locale === 'en' ? '🇺🇸 EN' : '🇻🇳 VI'}
+                {locale === 'en' ? '🇺🇸 EN' : '🇻🇳 Tiếng Việt'}
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>

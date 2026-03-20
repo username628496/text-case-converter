@@ -73,12 +73,6 @@ export function PasswordGeneratorTool() {
             >
               <Copy />
             </Button>
-            <Button
-              onClick={handleCopy}
-              className="bg-[var(--color-navy)] hover:bg-[#243460] text-white text-sm"
-            >
-              {t('copyBtn')}
-            </Button>
           </div>
         </div>
 
