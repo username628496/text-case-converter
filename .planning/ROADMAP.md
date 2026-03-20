@@ -30,7 +30,7 @@ Full details: `.planning/milestones/v1.0-ROADMAP.md`
 
 #### Phase 6: Component Fixes + Content
 
-- [ ] **Phase 6: Component Fixes + Content** - Toolbar deduplication, tab overflow, locale label, "How it works" section, FAQ redesign
+- [x] **Phase 6: Component Fixes + Content** - Toolbar deduplication, tab overflow, locale label, "How it works" section, FAQ redesign (completed 2026-03-20)
 
 #### Phase 7: Navigation + Layout
 
@@ -95,5 +95,5 @@ Plans:
 | 3. Sub-Tools + SEO Infrastructure | v1.0 | 4/4 | Complete | 2026-03-20 |
 | 4. Launch Readiness | v1.0 | 2/2 | Complete | 2026-03-20 |
 | 5. Visual Foundation | v1.1 | 3/3 | Complete | 2026-03-20 |
-| 6. Component Fixes + Content | 1/2 | In Progress|  | - |
+| 6. Component Fixes + Content | 2/2 | Complete   | 2026-03-20 | - |
 | 7. Navigation + Layout | v1.1 | 0/? | Not started | - |

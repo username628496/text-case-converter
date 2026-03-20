@@ -45,9 +45,9 @@ Requirements for the UI Polish milestone. Each maps to roadmap phases.
 
 ### CONT — Content
 
-- [ ] **CONT-01**: "How it works" section added below the tool card on the homepage: 2-column grid of 7 mode cards
-- [ ] **CONT-02**: Each mode card shows colored badge, mode name, 2-sentence description, and before→after example in monospace
-- [ ] **CONT-03**: All 7 mode descriptions and examples exist in en.json and vi.json with proper Vietnamese diacritics
+- [x] **CONT-01**: "How it works" section added below the tool card on the homepage: 2-column grid of 7 mode cards
+- [x] **CONT-02**: Each mode card shows colored badge, mode name, 2-sentence description, and before→after example in monospace
+- [x] **CONT-03**: All 7 mode descriptions and examples exist in en.json and vi.json with proper Vietnamese diacritics
 - [x] **CONT-04**: FAQ redesigned: left border accent (3px solid #1a2744 navy) on open items, navy typography, visual hierarchy, HelpCircle icon in section heading, no hover:underline on trigger
 
 ### NAV — Navigation & Footer
@@ -108,9 +108,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | COMP-01 | Phase 6 | Complete |
 | COMP-02 | Phase 6 | Complete |
 | COMP-03 | Phase 6 | Complete |
-| CONT-01 | Phase 6 | Pending |
-| CONT-02 | Phase 6 | Pending |
-| CONT-03 | Phase 6 | Pending |
+| CONT-01 | Phase 6 | Complete |
+| CONT-02 | Phase 6 | Complete |
+| CONT-03 | Phase 6 | Complete |
 | CONT-04 | Phase 6 | Complete |
 | NAV-01 | Phase 7 | Pending |
 | NAV-02 | Phase 7 | Pending |

@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: UI Polish
 status: unknown
-stopped_at: "Completed 06-01-PLAN.md"
-last_updated: "2026-03-20T15:42:00.000Z"
+stopped_at: Completed 06-02-PLAN.md
+last_updated: "2026-03-20T15:29:01.072Z"
 progress:
   total_phases: 3
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 5
-  completed_plans: 4
+  completed_plans: 5
 ---
 
 # Project State
@@ -51,6 +51,7 @@ Plan: 2 of 2
 | 05-visual-foundation | P02 | 2 min | 2 | 7 |
 | Phase 05-visual-foundation PP03 | 2min | 2 tasks | 9 files |
 | 06-component-fixes-content | P01 | 2 min | 2 | 7 |
+| Phase 06-component-fixes-content P02 | 3 | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -72,6 +73,8 @@ Recent decisions affecting current work:
 - [Phase 06-component-fixes-content P01]: Locale switcher shows full 'Tieng Viet' with diacritics in trigger button
 - [Phase 06-component-fixes-content P01]: FAQ uses data-[state=open] Tailwind variants for left border (#1a2744, 3px) and navy text color without JS
 - [Phase 06-component-fixes-content P01]: AccordionTrigger no-underline hover:no-underline overrides shadcn default hover:underline
+- [Phase 06-component-fixes-content]: HowItWorksSection is a Server Component receiving translations as props; tHowItWorks.raw('modes') extracts the entire modes object map
+- [Phase 06-component-fixes-content]: Badge colors driven by CASE_MODES[n].color via inline style for exact match with mode tabs
 
 ### Pending Todos
 
@@ -89,6 +92,6 @@ None active.
 
 ## Session Continuity
 
-Last session: 2026-03-20T15:42:00.000Z
-Stopped at: Completed 06-01-PLAN.md
-Resume file: .planning/phases/06-component-fixes-content/06-02-PLAN.md
+Last session: 2026-03-20T15:29:01.069Z
+Stopped at: Completed 06-02-PLAN.md
+Resume file: None
