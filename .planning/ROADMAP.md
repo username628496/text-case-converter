@@ -89,6 +89,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation Infrastructure | 2/2 | Complete   | 2026-03-19 |
-| 2. Core Case Converter | 0/4 | Not started | - |
+| 2. Core Case Converter | 3/4 | In Progress|  |
 | 3. Sub-Tools + SEO Infrastructure | 0/? | Not started | - |
 | 4. Launch Readiness | 0/? | Not started | - |

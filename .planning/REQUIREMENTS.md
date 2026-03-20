@@ -9,11 +9,11 @@
 
 - [x] **CORE-01**: User can convert text using 7 case modes (Sentence, lower, UPPER, Capitalized, Alternating, Title, Inverse) via tab switching in a single textarea
 - [x] **CORE-02**: Conversion happens instantly on mode-select or keystroke — no submit button required
-- [ ] **CORE-03**: User can copy converted text to clipboard with visual "Copied!" confirmation (~1.5s state)
+- [x] **CORE-03**: User can copy converted text to clipboard with visual "Copied!" confirmation (~1.5s state)
 - [x] **CORE-04**: User sees live character and word count updating in real-time as text changes
-- [ ] **CORE-05**: User can clear the textarea with a single button click
-- [ ] **CORE-06**: User sees related tools navigation links below each tool to reduce bounce
-- [ ] **CORE-07**: Each tool page displays FAQ and how-to content below the tool (required for JSON-LD HowTo schema validity)
+- [x] **CORE-05**: User can clear the textarea with a single button click
+- [x] **CORE-06**: User sees related tools navigation links below each tool to reduce bounce
+- [x] **CORE-07**: Each tool page displays FAQ and how-to content below the tool (required for JSON-LD HowTo schema validity)
 - [x] **CORE-08**: UI supports dark mode via OS preference (Tailwind CSS v4 @media prefers-color-scheme)
 
 ### Sub-Tools
@@ -90,11 +90,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | I18N-03 | Phase 1 | Complete |
 | CORE-01 | Phase 2 | Complete |
 | CORE-02 | Phase 2 | Complete |
-| CORE-03 | Phase 2 | Pending |
+| CORE-03 | Phase 2 | Complete |
 | CORE-04 | Phase 2 | Complete |
-| CORE-05 | Phase 2 | Pending |
-| CORE-06 | Phase 2 | Pending |
-| CORE-07 | Phase 2 | Pending |
+| CORE-05 | Phase 2 | Complete |
+| CORE-06 | Phase 2 | Complete |
+| CORE-07 | Phase 2 | Complete |
 | CORE-08 | Phase 2 | Complete |
 | SEO-01 | Phase 2 | Pending |
 | SEO-02 | Phase 2 | Pending |
