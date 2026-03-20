@@ -48,20 +48,22 @@ Full details: `.planning/milestones/v1.0-ROADMAP.md`
   3. Body copy, textarea content, and headings are visibly larger than v1.0 baseline — H1 at 30px, H2 at 20px, body at 15px
   4. Every button, tab pill, badge, card, input, and nav hover state uses a rectangular corner radius (4px or 6px); no rounded-full shapes appear on interactive elements
   5. The FAQ accordion items are square-cornered; related tool chip links and nav hover backgrounds are 4px radius
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 05-01: TBD
+- [ ] 05-01-PLAN.md — Font swap (Inter + JetBrains Mono) and mint/dark color palette CSS variables
+- [ ] 05-02-PLAN.md — Typography size updates across all components (H1, H2, body, FAQ, stats)
+- [ ] 05-03-PLAN.md — Border radius updates across all UI primitives and usage sites
 
 ### Phase 6: Component Fixes + Content
 **Goal**: Structural component bugs are resolved and the homepage gains a complete "How it works" section and redesigned FAQ — making the tool self-explanatory in both EN and VI
 **Depends on**: Phase 5
 **Requirements**: COMP-01, COMP-02, COMP-03, CONT-01, CONT-02, CONT-03, CONT-04
 **Success Criteria** (what must be TRUE):
-  1. The toolbar shows only icon-only buttons (copy, download, clear); the filled "Copy / Sao chép" primary button is gone from the homepage and all 4 sub-tool pages
+  1. The toolbar shows only icon-only buttons (copy, download, clear); the filled "Copy / Sao chep" primary button is gone from the homepage and all 4 sub-tool pages
   2. On a viewport under 1400px wide, the 7 case mode tabs scroll horizontally without truncating labels; on screens wider than 1280px all tabs are visible without scrolling
-  3. The locale switcher displays "Tiếng Việt" with correct diacritics in both EN and VI locales
-  4. A "How it works" section appears below the tool card on the homepage: a 2-column grid of 7 mode cards, each showing a colored badge, mode name, 2-sentence description, and a monospace before→after example
+  3. The locale switcher displays "Tieng Viet" with correct diacritics in both EN and VI locales
+  4. A "How it works" section appears below the tool card on the homepage: a 2-column grid of 7 mode cards, each showing a colored badge, mode name, 2-sentence description, and a monospace before->after example
   5. FAQ items display a 3px navy left border accent on open items, navy typography, and a HelpCircle icon in the section heading; trigger text has no underline on hover
 **Plans**: TBD
 
@@ -73,11 +75,11 @@ Plans:
 **Depends on**: Phase 6
 **Requirements**: NAV-01, NAV-02, NAV-03, NAV-04, LAYOUT-01
 **Success Criteria** (what must be TRUE):
-  1. A footer appears on every page with a 3-column desktop layout containing copyright, tagline, 4 placeholder links (Privacy Policy, Terms of Service, Sitemap, Contact), and a bottom strip reading "Made with ❤ for Vietnamese and English users"
+  1. A footer appears on every page with a 3-column desktop layout containing copyright, tagline, 4 placeholder links (Privacy Policy, Terms of Service, Sitemap, Contact), and a bottom strip reading "Made with heart for Vietnamese and English users"
   2. The footer renders correctly in dark mode (dark background, dark border) and all footer copy is translated in both en.json and vi.json with correct Vietnamese diacritics
   3. The sidebar below the ad slot shows grouped tool navigation links (Text Tools, Code & Data, Random categories) with locale-prefixed URLs; the current page link is styled with navy + mint tint
   4. The sidebar tool links are accessible inside the mobile Sheet drawer
-  5. All 5 tool pages share the same ToolPageLayout: identical container width, H1 size, description size, card border, section spacing, and section order (tool area → below-tool content → FAQ → related tools)
+  5. All 5 tool pages share the same ToolPageLayout: identical container width, H1 size, description size, card border, section spacing, and section order (tool area -> below-tool content -> FAQ -> related tools)
 **Plans**: TBD
 
 Plans:
@@ -91,6 +93,6 @@ Plans:
 | 2. Core Case Converter | v1.0 | 4/4 | Complete | 2026-03-20 |
 | 3. Sub-Tools + SEO Infrastructure | v1.0 | 4/4 | Complete | 2026-03-20 |
 | 4. Launch Readiness | v1.0 | 2/2 | Complete | 2026-03-20 |
-| 5. Visual Foundation | v1.1 | 0/? | Not started | - |
+| 5. Visual Foundation | v1.1 | 0/3 | Planning complete | - |
 | 6. Component Fixes + Content | v1.1 | 0/? | Not started | - |
 | 7. Navigation + Layout | v1.1 | 0/? | Not started | - |
