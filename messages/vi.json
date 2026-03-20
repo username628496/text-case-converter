@@ -1,38 +1,100 @@
 {
   "common": {
-    "siteName": "Chuyen Doi Chu Hoa Thuong",
+    "siteName": "Chuy\u1EC3n \u0110\u1ED5i Ch\u1EEF Hoa Th\u01B0\u1EDDng",
     "languageSwitcher": {
       "en": "English",
-      "vi": "Tieng Viet"
+      "vi": "Ti\u1EBFng Vi\u1EC7t"
     }
   },
   "tools": {
     "caseConverter": {
-      "name": "Chuyen doi chu hoa thuong",
-      "description": "Chuyen doi van ban giua cac kieu chu hoa thuong"
+      "name": "Chuy\u1EC3n \u0111\u1ED5i ch\u1EEF hoa th\u01B0\u1EDDng",
+      "description": "Chuy\u1EC3n \u0111\u1ED5i v\u0103n b\u1EA3n gi\u1EEFa c\u00E1c ki\u1EC3u ch\u1EEF hoa th\u01B0\u1EDDng"
     },
     "reverseText": {
-      "name": "Dao nguoc van ban",
-      "description": "Dao nguoc bat ky chuoi van ban nao"
+      "name": "\u0110\u1EA3o ng\u01B0\u1EE3c v\u0103n b\u1EA3n",
+      "description": "\u0110\u1EA3o ng\u01B0\u1EE3c b\u1EA5t k\u1EF3 chu\u1ED7i v\u0103n b\u1EA3n n\u00E0o"
     },
     "base64": {
-      "name": "Ma hoa/Giai ma Base64",
-      "description": "Ma hoa va giai ma chuoi Base64"
+      "name": "M\u00E3 h\u00F3a/Gi\u1EA3i m\u00E3 Base64",
+      "description": "M\u00E3 h\u00F3a v\u00E0 gi\u1EA3i m\u00E3 chu\u1ED7i Base64"
     },
     "slugGenerator": {
-      "name": "Tao slug",
-      "description": "Tao slug than thien voi URL tu van ban"
+      "name": "T\u1EA1o slug",
+      "description": "T\u1EA1o slug th\u00E2n thi\u1EC7n v\u1EDBi URL t\u1EEB v\u0103n b\u1EA3n"
     },
     "passwordGenerator": {
-      "name": "Tao mat khau",
-      "description": "Tao mat khau ngau nhien an toan"
+      "name": "T\u1EA1o m\u1EADt kh\u1EA9u",
+      "description": "T\u1EA1o m\u1EADt kh\u1EA9u ng\u1EABu nhi\u00EAn an to\u00E0n"
     }
   },
   "layout": {
-    "adPlaceholder": "Khong gian quang cao"
+    "adPlaceholder": "Kh\u00F4ng gian qu\u1EA3ng c\u00E1o"
   },
   "home": {
-    "heading": "Chuyen Doi Chu Hoa Thuong",
-    "subheading": "Cong cu truc tuyen mien phi de chuyen doi van ban giua cac kieu chu hoa thuong"
+    "heading": "Chuy\u1EC3n \u0110\u1ED5i Ch\u1EEF Hoa Ch\u1EEF Th\u01B0\u1EDDng",
+    "subheading": "C\u00F4ng c\u1EE5 tr\u1EF1c tuy\u1EBFn mi\u1EC5n ph\u00ED \u0111\u1EC3 chuy\u1EC3n \u0111\u1ED5i v\u0103n b\u1EA3n gi\u1EEFa c\u00E1c ki\u1EC3u ch\u1EEF hoa th\u01B0\u1EDDng"
+  },
+  "tool": {
+    "title": "Chuy\u1EC3n \u0110\u1ED5i Ch\u1EEF Hoa Ch\u1EEF Th\u01B0\u1EDDng",
+    "description": "Chuy\u1EC3n \u0111\u1ED5i v\u0103n b\u1EA3n sang ch\u1EEF hoa, ch\u1EEF th\u01B0\u1EDDng, ch\u1EEF ti\u00EAu \u0111\u1EC1 v\u00E0 nhi\u1EC1u \u0111\u1ECBnh d\u1EA1ng kh\u00E1c \u2014 ngay l\u1EADp t\u1EE9c.",
+    "placeholder": "Nh\u1EADp ho\u1EB7c d\u00E1n v\u0103n b\u1EA3n c\u1EE7a b\u1EA1n v\u00E0o \u0111\u00E2y\u2026",
+    "textareaLabel": "Nh\u1EADp v\u0103n b\u1EA3n \u0111\u1EC3 chuy\u1EC3n \u0111\u1ED5i",
+    "charCount": "{n} k\u00FD t\u1EF1",
+    "wordCount": "{n} t\u1EEB",
+    "lineCount": "{n} d\u00F2ng",
+    "copyBtn": "Sao ch\u00E9p",
+    "copyAria": "Sao ch\u00E9p v\u00E0o clipboard",
+    "copyToast": "\u0110\u00E3 sao ch\u00E9p v\u00E0o clipboard!",
+    "clearAria": "X\u00F3a to\u00E0n b\u1ED9 v\u0103n b\u1EA3n",
+    "downloadAria": "T\u1EA3i xu\u1ED1ng d\u01B0\u1EDBi d\u1EA1ng t\u1EC7p v\u0103n b\u1EA3n",
+    "modes": {
+      "sentence": "Ch\u1EEF c\u00E2u",
+      "lower": "ch\u1EEF th\u01B0\u1EDDng",
+      "upper": "CH\u1EEE HOA",
+      "capital": "Ch\u1EEF Hoa \u0110\u1EA7u",
+      "alternating": "xEn k\u1EBD",
+      "title": "Ti\u00EAu \u0110\u1EC1",
+      "inverse": "\u0110\u1EA2O nG\u01AF\u1EE2C"
+    }
+  },
+  "faq": {
+    "heading": "C\u00E2u h\u1ECFi th\u01B0\u1EDDng g\u1EB7p",
+    "items": [
+      {
+        "question": "C\u00F4ng c\u1EE5 chuy\u1EC3n \u0111\u1ED5i ch\u1EEF hoa th\u01B0\u1EDDng l\u00E0 g\u00EC?",
+        "answer": "C\u00F4ng c\u1EE5 chuy\u1EC3n \u0111\u1ED5i ch\u1EEF hoa th\u01B0\u1EDDng l\u00E0 c\u00F4ng c\u1EE5 tr\u1EF1c tuy\u1EBFn mi\u1EC5n ph\u00ED gi\u00FAp thay \u0111\u1ED5i ki\u1EC3u vi\u1EBFt hoa c\u1EE7a v\u0103n b\u1EA3n. B\u1EA1n c\u00F3 th\u1EC3 chuy\u1EC3n \u0111\u1ED5i gi\u1EEFa CH\u1EEE HOA, ch\u1EEF th\u01B0\u1EDDng, Ch\u1EEF Ti\u00EAu \u0110\u1EC1, Ch\u1EEF c\u00E2u, Ch\u1EEF Hoa \u0110\u1EA7u, xEn K\u1EBC v\u00E0 \u0110\u1EA2O nG\u01AF\u1EE2C ch\u1EC9 v\u1EDBi m\u1ED9t c\u00FA nh\u1EA5p chu\u1ED9t."
+      },
+      {
+        "question": "L\u00E0m th\u1EBF n\u00E0o \u0111\u1EC3 s\u1EED d\u1EE5ng c\u00F4ng c\u1EE5 n\u00E0y?",
+        "answer": "Ch\u1EC9 c\u1EA7n nh\u1EADp ho\u1EB7c d\u00E1n v\u0103n b\u1EA3n v\u00E0o \u00F4 v\u0103n b\u1EA3n ph\u00EDa tr\u00EAn, sau \u0111\u00F3 nh\u1EA5p v\u00E0o m\u1ED9t trong c\u00E1c tab ch\u1EBF \u0111\u1ED9 ch\u1EEF. V\u0103n b\u1EA3n s\u1EBD \u0111\u01B0\u1EE3c chuy\u1EC3n \u0111\u1ED5i ngay l\u1EADp t\u1EE9c \u2014 kh\u00F4ng c\u1EA7n nh\u1EA5n n\u00FAt g\u1EEDi."
+      },
+      {
+        "question": "S\u1EF1 kh\u00E1c bi\u1EC7t gi\u1EEFa Ch\u1EEF Ti\u00EAu \u0110\u1EC1 v\u00E0 Ch\u1EEF Hoa \u0110\u1EA7u l\u00E0 g\u00EC?",
+        "answer": "Ch\u1EEF Ti\u00EAu \u0110\u1EC1 tu\u00E2n theo quy t\u1EAFc ki\u1EC3u AP/Chicago, vi\u1EBFt hoa h\u1EA7u h\u1EBFt c\u00E1c t\u1EEB nh\u01B0ng gi\u1EEF c\u00E1c t\u1EEB ng\u1EAFn nh\u01B0 'a', 'an', 'the', 'of', 'in', 'and', 'or', 'but', 'for', 'nor' \u1EDF d\u1EA1ng ch\u1EEF th\u01B0\u1EDDng (tr\u1EEB khi ch\u00FAng b\u1EAFt \u0111\u1EA7u c\u00E2u). Ch\u1EEF Hoa \u0110\u1EA7u \u0111\u01A1n gi\u1EA3n vi\u1EBFt hoa ch\u1EEF c\u00E1i \u0111\u1EA7u ti\u00EAn c\u1EE7a m\u1ECDi t\u1EEB."
+      },
+      {
+        "question": "Ch\u1EEF xen k\u1EBD v\u00E0 \u0111\u1EA3o ng\u01B0\u1EE3c l\u00E0 g\u00EC?",
+        "answer": "Ch\u1EEF xen k\u1EBD (xEn K\u1EBC) chuy\u1EC3n \u0111\u1ED5i t\u1EEBng k\u00FD t\u1EF1 gi\u1EEFa ch\u1EEF th\u01B0\u1EDDng v\u00E0 ch\u1EEF hoa, b\u1EAFt \u0111\u1EA7u b\u1EB1ng ch\u1EEF th\u01B0\u1EDDng. Ch\u1EEF \u0111\u1EA3o ng\u01B0\u1EE3c l\u1EADt m\u1ECDi ch\u1EEF c\u00E1i \u2014 ch\u1EEF hoa th\u00E0nh ch\u1EEF th\u01B0\u1EDDng v\u00E0 ng\u01B0\u1EE3c l\u1EA1i, trong khi s\u1ED1 v\u00E0 k\u00FD hi\u1EC7u gi\u1EEF nguy\u00EAn."
+      },
+      {
+        "question": "V\u0103n b\u1EA3n c\u1EE7a t\u00F4i c\u00F3 \u0111\u01B0\u1EE3c l\u01B0u tr\u1EEF ho\u1EB7c g\u1EEDi \u0111\u1EBFn m\u00E1y ch\u1EE7 kh\u00F4ng?",
+        "answer": "Kh\u00F4ng. T\u1EA5t c\u1EA3 vi\u1EC7c chuy\u1EC3n \u0111\u1ED5i v\u0103n b\u1EA3n \u0111\u1EC1u di\u1EC5n ra ho\u00E0n to\u00E0n trong tr\u00ECnh duy\u1EC7t c\u1EE7a b\u1EA1n b\u1EB1ng JavaScript. V\u0103n b\u1EA3n kh\u00F4ng bao gi\u1EDD \u0111\u01B0\u1EE3c g\u1EEDi \u0111\u1EBFn b\u1EA5t k\u1EF3 m\u00E1y ch\u1EE7 n\u00E0o, gi\u00FAp c\u00F4ng c\u1EE5 ho\u00E0n to\u00E0n ri\u00EAng t\u01B0 v\u00E0 an to\u00E0n."
+      }
+    ]
+  },
+  "related": {
+    "heading": "C\u00F4ng c\u1EE5 li\u00EAn quan"
+  },
+  "seo": {
+    "title": "Chuy\u1EC3n \u0110\u1ED5i Ch\u1EEF Hoa Ch\u1EEF Th\u01B0\u1EDDng \u2014 C\u00F4ng C\u1EE5 Tr\u1EF1c Tuy\u1EBFn Mi\u1EC5n Ph\u00ED",
+    "description": "C\u00F4ng c\u1EE5 chuy\u1EC3n \u0111\u1ED5i ch\u1EEF hoa ch\u1EEF th\u01B0\u1EDDng tr\u1EF1c tuy\u1EBFn mi\u1EC5n ph\u00ED. Chuy\u1EC3n sang CH\u1EEE HOA, ch\u1EEF th\u01B0\u1EDDng, Ch\u1EEF Ti\u00EAu \u0110\u1EC1, Ch\u1EEF C\u00E2u, Xen K\u1EBD v\u00E0 \u0110\u1EA2O ng\u01B0\u1EE3c \u2014 ngay l\u1EADp t\u1EE9c."
+  },
+  "howto": {
+    "name": "C\u00E1ch chuy\u1EC3n \u0111\u1ED5i ki\u1EC3u ch\u1EEF",
+    "step1": "Nh\u1EADp ho\u1EB7c d\u00E1n v\u0103n b\u1EA3n v\u00E0o \u00F4 v\u0103n b\u1EA3n",
+    "step2": "Ch\u1ECDn tab ch\u1EBF \u0111\u1ED9 ch\u1EEF (Ch\u1EEF c\u00E2u, ch\u1EEF th\u01B0\u1EDDng, CH\u1EEE HOA, Ch\u1EEF Hoa \u0110\u1EA7u, xEn k\u1EBD, Ti\u00EAu \u0110\u1EC1, ho\u1EB7c \u0110\u1EA2O nG\u01AF\u1EE2C)",
+    "step3": "V\u0103n b\u1EA3n \u0111\u01B0\u1EE3c chuy\u1EC3n \u0111\u1ED5i ngay khi b\u1EA1n ch\u1ECDn tab",
+    "step4": "Nh\u1EA5p n\u00FAt Sao ch\u00E9p \u0111\u1EC3 sao ch\u00E9p v\u0103n b\u1EA3n \u0111\u00E3 chuy\u1EC3n \u0111\u1ED5i v\u00E0o clipboard"
   }
 }

@@ -34,5 +34,67 @@
   "home": {
     "heading": "Text Case Converter",
     "subheading": "Free online tool to convert text between different cases"
+  },
+  "tool": {
+    "title": "Text Case Converter",
+    "description": "Convert text between uppercase, lowercase, title case, and more \u2014 instantly.",
+    "placeholder": "Type or paste your text here\u2026",
+    "textareaLabel": "Text input for case conversion",
+    "charCount": "{n} characters",
+    "wordCount": "{n} words",
+    "lineCount": "{n} lines",
+    "copyBtn": "Copy",
+    "copyAria": "Copy to clipboard",
+    "copyToast": "Copied to clipboard!",
+    "clearAria": "Clear all text",
+    "downloadAria": "Download as text file",
+    "modes": {
+      "sentence": "Sentence case",
+      "lower": "lower case",
+      "upper": "UPPER CASE",
+      "capital": "Capitalized Case",
+      "alternating": "aLtErNaTiNg",
+      "title": "Title Case",
+      "inverse": "iNVERSE CaSe"
+    }
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "What is a text case converter?",
+        "answer": "A text case converter is a free online tool that changes the capitalization of your text. You can convert between UPPER CASE, lower case, Title Case, Sentence case, Capitalized Case, aLtErNaTiNg CaSe, and iNVERSE CaSe with a single click."
+      },
+      {
+        "question": "How do I use this tool?",
+        "answer": "Simply type or paste your text into the text area above, then click on one of the case mode tabs below it. Your text will be converted instantly \u2014 no need to press a submit button."
+      },
+      {
+        "question": "What is the difference between Title Case and Capitalized Case?",
+        "answer": "Title Case follows AP/Chicago style rules, capitalizing most words but keeping short words like 'a', 'an', 'the', 'of', 'in', 'and', 'or', 'but', 'for', and 'nor' in lowercase (unless they start the sentence). Capitalized Case simply capitalizes the first letter of every word regardless."
+      },
+      {
+        "question": "What are Alternating and Inverse case?",
+        "answer": "Alternating case (aLtErNaTiNg) switches each character between lowercase and uppercase, starting with lowercase. Inverse case flips every letter \u2014 uppercase becomes lowercase and vice versa, while numbers and symbols stay unchanged."
+      },
+      {
+        "question": "Is my text stored or sent to a server?",
+        "answer": "No. All text conversion happens entirely in your browser using JavaScript. Your text is never sent to any server, making this tool completely private and safe to use with sensitive content."
+      }
+    ]
+  },
+  "related": {
+    "heading": "Related Tools"
+  },
+  "seo": {
+    "title": "Text Case Converter \u2014 Free Online Tool",
+    "description": "Free online text case converter. Convert to UPPER CASE, lower case, Title Case, Sentence case, Capitalized, Alternating, and Inverse \u2014 instantly, no signup."
+  },
+  "howto": {
+    "name": "How to Convert Text Case",
+    "step1": "Type or paste your text into the text area",
+    "step2": "Select a case mode tab (Sentence, lower, UPPER, Capitalized, Alternating, Title, or Inverse)",
+    "step3": "Your text converts instantly as you select the tab",
+    "step4": "Click the Copy button to copy the converted text to your clipboard"
   }
 }
