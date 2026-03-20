@@ -1,0 +1,81 @@
+'use client'
+
+import { useState } from 'react'
+import { useTranslations } from 'next-intl'
+import { generateSlug } from '@/lib/slug-generator'
+import { toast } from 'sonner'
+import { Textarea } from '@/components/ui/textarea'
+import { Button } from '@/components/ui/button'
+import { Card } from '@/components/ui/card'
+import { Copy, Trash2 } from 'lucide-react'
+
+export function SlugGeneratorTool() {
+  const t = useTranslations('slugGenerator.tool')
+  const [inputText, setInputText] = useState('')
+
+  const output = generateSlug(inputText)
+  const charCount = output.length
+
+  const handleCopy = async () => {
+    await navigator.clipboard.writeText(output)
+    toast(t('copyToast'))
+  }
+
+  const handleClear = () => setInputText('')
+
+  return (
+    <div>
+      <h1 className="text-2xl font-bold text-[var(--color-navy)] dark:text-zinc-100">
+        {t('title')}
+      </h1>
+      <p className="text-sm text-zinc-700 dark:text-zinc-300 mt-1">
+        {t('description')}
+      </p>
+
+      <Card className="mt-4 p-4 border-[var(--color-border-brand)]">
+        <Textarea
+          value={inputText}
+          onChange={e => setInputText(e.target.value)}
+          placeholder={t('placeholder')}
+          className="min-h-[120px] resize-y font-mono text-sm border-[var(--color-border-brand)]"
+          aria-label={t('textareaLabel')}
+        />
+
+        <div className="mt-3 p-3 rounded-md bg-zinc-50 dark:bg-zinc-900 border border-[var(--color-border-brand)] min-h-[44px] font-mono text-sm text-zinc-800 dark:text-zinc-200 select-all break-all">
+          {output || <span className="text-zinc-400 dark:text-zinc-500 font-sans">{t('outputLabel')}</span>}
+        </div>
+
+        {/* Toolbar */}
+        <div className="flex items-center justify-between mt-2">
+          <span className="text-xs text-zinc-400" aria-live="polite">
+            {t('charCount', { n: charCount })}
+          </span>
+          <div className="flex items-center gap-2">
+            <Button
+              variant="ghost"
+              size="icon"
+              aria-label={t('copyAria')}
+              onClick={handleCopy}
+            >
+              <Copy />
+            </Button>
+            <Button
+              variant="ghost"
+              size="icon"
+              aria-label={t('clearAria')}
+              onClick={handleClear}
+            >
+              <Trash2 />
+            </Button>
+            <Button
+              onClick={handleCopy}
+              className="bg-[var(--color-navy)] hover:bg-[#243460] text-white text-sm"
+            >
+              {t('copyBtn')}
+            </Button>
+          </div>
+        </div>
+      </Card>
+    </div>
+  )
+}
