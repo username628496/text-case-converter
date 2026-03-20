@@ -109,6 +109,12 @@ Recent decisions affecting current work:
 
 None yet.
 
+### Quick Tasks Completed
+
+| # | Description | Date | Commit | Directory |
+|---|-------------|------|--------|-----------|
+| 260320-k1c | Update domain to convertcase.uk, fix VI language label | 2026-03-20 | d2b6ea6 | [260320-k1c-update-all-hardcoded-domain-references-f](.planning/quick/260320-k1c-update-all-hardcoded-domain-references-f/) |
+
 ### Blockers/Concerns
 
 - [Phase 1 risk RESOLVED]: next-intl v4 proxy.ts signature verified — default export createMiddleware(routing) is correct for v4.8.3
@@ -117,6 +123,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-20T07:08:53.064Z
-Stopped at: Completed 04-02-PLAN.md — v1.0 milestone complete, production confirmed launch-ready
+Last session: 2026-03-20T07:25:37.651Z
+Stopped at: Completed quick task 260320-k1c: Update domain to convertcase.uk, fix VI language label
 Resume file: None
