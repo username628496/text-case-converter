@@ -53,8 +53,8 @@ export function Base64Tool() {
               onClick={() => setMode(m)}
               className={
                 mode === m
-                  ? 'px-4 py-1.5 rounded-md text-sm font-medium transition-colors bg-[var(--color-navy)] text-white'
-                  : 'px-4 py-1.5 rounded-md text-sm transition-colors bg-white dark:bg-zinc-800 border border-[var(--color-border-brand)] dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:border-[var(--color-navy)] hover:text-[var(--color-navy)]'
+                  ? 'px-4 py-1.5 rounded-[4px] text-sm font-medium transition-colors bg-[var(--color-navy)] text-white'
+                  : 'px-4 py-1.5 rounded-[4px] text-sm transition-colors bg-white dark:bg-zinc-800 border border-[var(--color-border-brand)] dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:border-[var(--color-navy)] hover:text-[var(--color-navy)]'
               }
             >
               {m === 'encode' ? t('encodeTab') : t('decodeTab')}

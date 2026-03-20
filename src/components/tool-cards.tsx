@@ -89,7 +89,7 @@ export function RelatedTools({ heading, locale, relatedSlugs, toolNames }: Relat
               <a
                 key={tool.slug}
                 href={tool.href}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md border border-[var(--color-border-brand)] text-sm text-zinc-700 dark:text-zinc-300 dark:border-zinc-700 hover:border-[var(--color-navy)] hover:text-[var(--color-navy)] transition-colors"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-[4px] border border-[var(--color-border-brand)] text-sm text-zinc-700 dark:text-zinc-300 dark:border-zinc-700 hover:border-[var(--color-navy)] hover:text-[var(--color-navy)] transition-colors"
               >
                 <Badge
                   style={{ backgroundColor: tool.display.color }}
