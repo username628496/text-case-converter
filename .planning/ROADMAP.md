@@ -95,5 +95,5 @@ Plans:
 | 3. Sub-Tools + SEO Infrastructure | v1.0 | 4/4 | Complete | 2026-03-20 |
 | 4. Launch Readiness | v1.0 | 2/2 | Complete | 2026-03-20 |
 | 5. Visual Foundation | v1.1 | 3/3 | Complete | 2026-03-20 |
-| 6. Component Fixes + Content | v1.1 | 0/2 | Planning | - |
+| 6. Component Fixes + Content | 1/2 | In Progress|  | - |
 | 7. Navigation + Layout | v1.1 | 0/? | Not started | - |
