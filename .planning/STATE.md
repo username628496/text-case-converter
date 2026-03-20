@@ -1,10 +1,10 @@
 ---
 gsd_state_version: 1.0
 milestone: v1.0
-milestone_name: milestone
-status: unknown
-stopped_at: "Completed quick task 260320-k1c: Update domain to convertcase.uk, fix VI language label"
-last_updated: "2026-03-20T07:43:54.016Z"
+milestone_name: MVP
+status: milestone_complete
+stopped_at: "Completed v1.0 milestone archival"
+last_updated: "2026-03-20"
 progress:
   total_phases: 4
   completed_phases: 4
@@ -16,15 +16,15 @@ progress:
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-03-19)
+See: .planning/PROJECT.md (updated 2026-03-20)
 
 **Core value:** Fast, accurate text tools on SEO-optimized pages that rank for both English and Vietnamese search queries
-**Current focus:** Phase 04 — launch-readiness
+**Current focus:** Planning next milestone — v2.0
 
 ## Current Position
 
-Phase: 04 (launch-readiness) — COMPLETE
-Plan: 2 of 2
+v1.0 milestone COMPLETE — all 4 phases shipped.
+Next: `/gsd:new-milestone` to define v2.0 scope.
 
 ## Performance Metrics
 

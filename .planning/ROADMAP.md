@@ -1,98 +1,33 @@
 # Roadmap: Text Case Converter
 
-## Overview
+## Milestones
 
-Starting from a fresh Next.js scaffold, this roadmap builds a multilingual (EN/VI) text utility site optimized for SEO and AdSense revenue. Phase 1 establishes the foundational infrastructure that everything else depends on: locale routing, tool registry, and layout with AdSense slot structure. Phase 2 builds the core case converter homepage — the primary traffic entry point — along with the full SEO template (metadata, JSON-LD, hreflang) that all subsequent pages will reuse. Phase 3 completes v1 by shipping the four priority sub-tools and the auto-generated sitemap. Phase 4 verifies the site is launch-ready: Core Web Vitals, Rich Results Test, hreflang validation, and live Vercel deployment.
+- ✅ **v1.0 MVP** — Phases 1-4 (shipped 2026-03-20)
+- 📋 **v2.0** — Phases 5+ (planned)
 
 ## Phases
 
-**Phase Numbering:**
-- Integer phases (1, 2, 3): Planned milestone work
-- Decimal phases (2.1, 2.2): Urgent insertions (marked with INSERTED)
+<details>
+<summary>✅ v1.0 MVP (Phases 1-4) — SHIPPED 2026-03-20</summary>
 
-Decimal phases appear between their surrounding integers in numeric order.
+- [x] Phase 1: Foundation Infrastructure (2/2 plans) — completed 2026-03-19
+- [x] Phase 2: Core Case Converter (4/4 plans) — completed 2026-03-20
+- [x] Phase 3: Sub-Tools + SEO Infrastructure (4/4 plans) — completed 2026-03-20
+- [x] Phase 4: Launch Readiness (2/2 plans) — completed 2026-03-20
 
-- [x] **Phase 1: Foundation Infrastructure** - Next.js 16 + next-intl v4 locale routing, tool registry, root layout with AdSense placeholders, Vercel deployment pipeline (completed 2026-03-19)
-- [x] **Phase 2: Core Case Converter** - Fully functional 7-mode homepage tool with complete SEO treatment (metadata, JSON-LD, hreflang) establishing the template for all tool pages (completed 2026-03-20)
-- [x] **Phase 3: Sub-Tools + SEO Infrastructure** - Four priority sub-tools (Reverse Text, Base64, Slug Generator, Password Generator) plus sitemap.ts and robots.ts (completed 2026-03-20)
-- [x] **Phase 4: Launch Readiness** - Core Web Vitals audit, Rich Results Test validation, hreflang verification, live deployment (completed 2026-03-20)
+Full details: `.planning/milestones/v1.0-ROADMAP.md`
 
-## Phase Details
+</details>
 
-### Phase 1: Foundation Infrastructure
-**Goal**: A working, building scaffold with correct locale routing, tool registry, and AdSense-ready layout — no visible product yet but the complete foundation for everything built in later phases
-**Depends on**: Nothing (first phase)
-**Requirements**: INFRA-01, INFRA-02, INFRA-03, I18N-01, I18N-02, I18N-03
-**Success Criteria** (what must be TRUE):
-  1. Navigating to `/` returns English content and navigating to `/vi/` returns Vietnamese content — locale routing works without `output: 'export'`
-  2. Navigating to `/vi/anything/` redirects correctly to the Vietnamese locale; navigating to `/anything/` uses the English locale with no prefix
-  3. The root layout renders AdSense placeholder divs at all three placements (header, sidebar, below-tool) with correct reserved CSS min-height values (90px / 250px / 90px)
-  4. All pages are statically generated — `next build` completes with no server runtime required and no `output: 'export'` flag
-  5. Pushing to main on GitHub triggers a successful Vercel deployment and the preview URL resolves correctly
-**Plans**: 2 plans
+### 📋 v2.0 (Planned)
 
-Plans:
-- [x] 01-01-PLAN.md — Install next-intl v4, configure i18n routing + proxy, create translation files, build tool registry
-- [x] 01-02-PLAN.md — Create app directory structure with locale layout, AdSense placeholders, page stubs, build verification, Vercel deploy
-
-### Phase 2: Core Case Converter
-**Goal**: Users can use a fully functional 7-mode case converter at the homepage, with complete SEO infrastructure (metadata, JSON-LD, hreflang) that serves as the validated template for all subsequent tool pages
-**Depends on**: Phase 1
-**Requirements**: CORE-01, CORE-02, CORE-03, CORE-04, CORE-05, CORE-06, CORE-07, CORE-08, SEO-01, SEO-02, I18N-04
-**Success Criteria** (what must be TRUE):
-  1. User can paste text, switch between all 7 case modes (Sentence, lower, UPPER, Capitalized, Alternating, Title, Inverse) via tabs, and see the converted output instantly — no submit button needed
-  2. User can click "Copy" and see a "Copied!" confirmation for ~1.5 seconds; character and word counts update live as text is typed; "Clear" empties the textarea in one click
-  3. The page renders correctly in dark mode when OS preference is dark (Tailwind `prefers-color-scheme`)
-  4. The English homepage (`/`) and Vietnamese homepage (`/vi/`) each have unique `<title>`, `<meta name="description">`, canonical URL, and `og:image` in their respective languages
-  5. Both locale pages include valid JSON-LD with SoftwareApplication + HowTo schema and bidirectional hreflang `<link rel="alternate">` tags pointing EN ↔ VI
-**Plans**: 4 plans
-
-Plans:
-- [ ] 02-01-PLAN.md — Case transform engine (7 functions + tests), i18n translations, CSS color system, og:image placeholder
-- [ ] 02-02-PLAN.md — SiteNav component with category dropdowns and locale switcher, layout integration
-- [ ] 02-03-PLAN.md — ToolPage interactive component, FAQ section, Related Tools section, homepage wiring
-- [ ] 02-04-PLAN.md — generateMetadata (title, description, canonical, hreflang), JSON-LD structured data
-
-### Phase 3: Sub-Tools + SEO Infrastructure
-**Goal**: Four priority sub-tools are live at their own URLs (EN + VI each) with full SEO treatment, the sitemap is auto-generated with hreflang alternates, and related-tools navigation is wired up across all tool pages
-**Depends on**: Phase 2
-**Requirements**: SEO-03, SEO-04, TOOL-01, TOOL-02, TOOL-03, TOOL-04, TOOL-05
-**Success Criteria** (what must be TRUE):
-  1. All four sub-tools are accessible at their EN URLs (`/reverse-text/`, `/base64-encode-decode/`, `/slug-generator/`, `/password-generator/`) and their VI equivalents (`/vi/reverse-text/`, etc.), each with the same UX as the core tool (instant conversion, copy, char/word count, clear, FAQ, related tools)
-  2. `/sitemap.xml` is accessible and contains entries for all tool pages (EN + VI) with correct `xhtml:link` hreflang alternates referencing both locale variants per URL
-  3. `/robots.txt` is accessible with correct crawl directives and sitemap reference
-  4. Each tool page displays related tools navigation links that route to other working tool pages — no dead links
-**Plans**: 4 plans
-
-Plans:
-- [ ] 03-01-PLAN.md — Transform/generator functions (reverse, base64, slug, password) with tests + complete EN/VI translations for all 4 sub-tools
-- [ ] 03-02-PLAN.md — 4 interactive tool components + rewrite [tool]/page.tsx with dynamic TOOL_COMPONENTS dispatch, generateMetadata, JSON-LD, FAQ, RelatedTools
-- [ ] 03-03-PLAN.md — Native sitemap.ts with hreflang alternates + robots.ts with crawl directives
-- [ ] 03-04-PLAN.md — Build verification + human verification of all sub-tools, sitemap, and robots
-
-### Phase 4: Launch Readiness
-**Goal**: The site passes all pre-launch quality gates — Core Web Vitals in "Good" range, structured data valid, hreflang verified, and the production deployment is live and confirmed working
-**Depends on**: Phase 3
-**Requirements**: (no new feature requirements — verification and deployment phase)
-**Success Criteria** (what must be TRUE):
-  1. Lighthouse audit on the homepage and at least one sub-tool page shows LCP, CLS, and INP all in the "Good" range (LCP < 2.5s, CLS < 0.1, INP < 200ms)
-  2. Google Rich Results Test passes for SoftwareApplication + HowTo schema on the homepage and at least one sub-tool page
-  3. Each EN tool page and its VI counterpart both include bidirectional hreflang tags — the EN page references the VI page and vice versa, with no self-referential mismatches
-  4. The production Vercel URL serves the correct locale for `/` (English) and `/vi/` (Vietnamese) with correct HTTP status codes — no 404s or redirect loops
-**Plans**: 2 plans
-
-Plans:
-- [ ] 04-01-PLAN.md — Lighthouse CWV audit, hreflang verification, locale routing checks, sitemap/robots accessibility
-- [ ] 04-02-PLAN.md — Fix any quality gate failures + human verification of production deployment
+_(Define with `/gsd:new-milestone`)_
 
 ## Progress
 
-**Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4
-
-| Phase | Plans Complete | Status | Completed |
-|-------|----------------|--------|-----------|
-| 1. Foundation Infrastructure | 2/2 | Complete   | 2026-03-19 |
-| 2. Core Case Converter | 4/4 | Complete   | 2026-03-20 |
-| 3. Sub-Tools + SEO Infrastructure | 4/4 | Complete   | 2026-03-20 |
-| 4. Launch Readiness | 2/2 | Complete   | 2026-03-20 |
+| Phase | Milestone | Plans Complete | Status | Completed |
+|-------|-----------|----------------|--------|-----------|
+| 1. Foundation Infrastructure | v1.0 | 2/2 | Complete | 2026-03-19 |
+| 2. Core Case Converter | v1.0 | 4/4 | Complete | 2026-03-20 |
+| 3. Sub-Tools + SEO Infrastructure | v1.0 | 4/4 | Complete | 2026-03-20 |
+| 4. Launch Readiness | v1.0 | 2/2 | Complete | 2026-03-20 |

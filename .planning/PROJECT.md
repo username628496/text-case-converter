@@ -54,31 +54,37 @@ Fast, accurate text tools on SEO-optimized pages that rank for both English and 
 
 ## Context
 
-- Stack: Next.js 14 App Router, TypeScript, Tailwind CSS, next-intl (EN/VI i18n), next-sitemap
-- Repo is a fresh Create Next App scaffold — no custom code yet
+- Stack: Next.js 16.2.0 App Router, TypeScript, Tailwind CSS v4, next-intl v4.8.3 (EN/VI i18n), Vitest v4
+- Shipped v1.0 with ~3,127 LOC TypeScript/TSX across 110 modified files
+- Production: https://convertcase.uk (Vercel, SSG, 10 URLs across 5 tools × 2 locales)
 - Competitor reference: convertcase.net (aim to surpass on SEO + UX)
 - Vietnamese market is an explicit target — full translation required, not just metadata
-- Deploy target: Vercel (account + GitHub connected)
 
 ## Constraints
 
-- **Tech Stack**: Next.js 14 App Router + TypeScript + Tailwind — locked
-- **i18n**: next-intl for EN/VI — locked
+- **Tech Stack**: Next.js 16 App Router + TypeScript + Tailwind v4 — locked
+- **i18n**: next-intl v4 for EN/VI — locked; proxy.ts (not middleware.ts) required for locale routing
 - **SEO**: SSG required for all pages — no SSR or client-only rendering for tool pages
 - **Monetization**: AdSense slot structure must be in DOM from day one (divs + comments) even if empty
+- **React Compiler**: Enabled — do not add manual useMemo/useCallback in Client Components
 
 ## Key Decisions
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Core tools first, expand iteratively | Ship fast with highest-value pages, add remaining 30+ tools in subsequent phases | ✓ Phase 02 homepage delivered |
+| Core tools first, expand iteratively | Ship fast with highest-value pages, add remaining 30+ tools in subsequent phases | ✓ v1.0 shipped 5 tools in 1 day |
 | Full VI translation (not just metadata) | Vietnamese is a primary audience, not an afterthought — partial translation hurts credibility | ✓ Full EN/VI with proper diacritics |
-| Each tool = its own URL | SEO-critical: individual pages rank for specific tool queries | ✓ Route structure in place |
-| SSG for all pages | Core Web Vitals + SEO — no runtime server needed | ✓ 13 routes statically generated |
+| Each tool = its own URL | SEO-critical: individual pages rank for specific tool queries | ✓ 10 URLs, all SSG |
+| SSG for all pages | Core Web Vitals + SEO — no runtime server needed | ✓ CWV Good range on production |
+| proxy.ts over middleware.ts | Next.js 16 changed convention — middleware.ts silently ignored for locale routing | ✓ Locale routing works on Vercel |
+| Native sitemap.ts over next-sitemap | Built-in hreflang alternates.languages support; external package creates competing sitemaps | ✓ Single clean sitemap with xhtml:link |
+| localeDetection: false | as-needed prefix conflicts with Accept-Language auto-redirect on real browsers | ✓ No redirect loops |
+| t.raw('items') for i18n arrays | next-intl v4 throws MISSING_MESSAGE during SSG inside try/catch; raw() avoids the throw | ✓ All FAQ content renders correctly |
+| Domain: convertcase.uk | Shorter, cleaner domain than textcaseconverter.com | ✓ Production at convertcase.uk |
 
 ## Current State
 
 v1.0 milestone complete — all 4 phases shipped. Production live at https://convertcase.uk with 5 tools (case converter + 4 sub-tools), bilingual EN/VI, full SEO (JSON-LD, hreflang, sitemap, robots.txt), Core Web Vitals in Good range. All 9 launch quality gates passed. 59 tests passing. Domain updated from textcaseconverter.com to convertcase.uk.
 
 ---
-*Last updated: 2026-03-20 after Phase 04: launch-readiness*
+*Last updated: 2026-03-20 after v1.0 milestone*
