@@ -65,10 +65,11 @@ Plans:
   3. The locale switcher displays "Tieng Viet" with correct diacritics in both EN and VI locales
   4. A "How it works" section appears below the tool card on the homepage: a 2-column grid of 7 mode cards, each showing a colored badge, mode name, 2-sentence description, and a monospace before->after example
   5. FAQ items display a 3px navy left border accent on open items, navy typography, and a HelpCircle icon in the section heading; trigger text has no underline on hover
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 06-01: TBD
+- [ ] 06-01-PLAN.md — Component fixes: toolbar dedup, tab overflow, locale label, FAQ redesign
+- [ ] 06-02-PLAN.md — "How it works" section with 7 mode cards and EN/VI translations
 
 ### Phase 7: Navigation + Layout
 **Goal**: Every page has a footer and sidebar tool navigation, and all 5 tool pages share an identical layout structure — giving the site a finished, consistent shape
@@ -93,6 +94,6 @@ Plans:
 | 2. Core Case Converter | v1.0 | 4/4 | Complete | 2026-03-20 |
 | 3. Sub-Tools + SEO Infrastructure | v1.0 | 4/4 | Complete | 2026-03-20 |
 | 4. Launch Readiness | v1.0 | 2/2 | Complete | 2026-03-20 |
-| 5. Visual Foundation | 3/3 | Complete   | 2026-03-20 | - |
-| 6. Component Fixes + Content | v1.1 | 0/? | Not started | - |
+| 5. Visual Foundation | v1.1 | 3/3 | Complete | 2026-03-20 |
+| 6. Component Fixes + Content | v1.1 | 0/2 | Planning | - |
 | 7. Navigation + Layout | v1.1 | 0/? | Not started | - |
