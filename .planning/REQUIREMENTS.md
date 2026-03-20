@@ -29,12 +29,12 @@
 - [x] **I18N-01**: All tool content is fully translated EN/VI via next-intl: tool names, descriptions, placeholder text, how-to copy, UI chrome, FAQ content
 - [x] **I18N-02**: English pages use clean URLs without locale prefix: /[tool-slug]/
 - [x] **I18N-03**: Vietnamese pages use /vi/[tool-slug]/ prefix
-- [ ] **I18N-04**: All pages include bidirectional hreflang EN ↔ VI (both locales reference each other)
+- [x] **I18N-04**: All pages include bidirectional hreflang EN ↔ VI (both locales reference each other)
 
 ### SEO
 
-- [ ] **SEO-01**: Every tool page generates dynamic metadata via generateMetadata(): title, description, canonical URL, og:image — unique per locale
-- [ ] **SEO-02**: Every tool page includes JSON-LD structured data: SoftwareApplication + HowTo schema
+- [x] **SEO-01**: Every tool page generates dynamic metadata via generateMetadata(): title, description, canonical URL, og:image — unique per locale
+- [x] **SEO-02**: Every tool page includes JSON-LD structured data: SoftwareApplication + HowTo schema
 - [ ] **SEO-03**: Site generates an auto-updated sitemap via native app/sitemap.ts with hreflang alternates.languages entries per tool URL
 - [ ] **SEO-04**: Site has robots.ts with correct crawl directives
 
@@ -96,9 +96,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CORE-06 | Phase 2 | Complete |
 | CORE-07 | Phase 2 | Complete |
 | CORE-08 | Phase 2 | Complete |
-| SEO-01 | Phase 2 | Pending |
-| SEO-02 | Phase 2 | Pending |
-| I18N-04 | Phase 2 | Pending |
+| SEO-01 | Phase 2 | Complete |
+| SEO-02 | Phase 2 | Complete |
+| I18N-04 | Phase 2 | Complete |
 | SEO-03 | Phase 3 | Pending |
 | SEO-04 | Phase 3 | Pending |
 | TOOL-01 | Phase 3 | Pending |

@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 02-core-case-converter/02-03-PLAN.md
-last_updated: "2026-03-20T03:31:57.139Z"
+stopped_at: Completed 02-core-case-converter/02-04-PLAN.md (awaiting checkpoint human-verify)
+last_updated: "2026-03-20T03:35:13.094Z"
 progress:
   total_phases: 4
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 6
-  completed_plans: 5
+  completed_plans: 6
 ---
 
 # Project State
@@ -51,6 +51,7 @@ Plan: 2 of 4
 | Phase 02-core-case-converter P01 | 4 min | 2 tasks | 10 files |
 | Phase 02-core-case-converter P02 | 2 min | 2 tasks | 4 files |
 | Phase 02-core-case-converter P03 | 1 min | 2 tasks | 4 files |
+| Phase 02-core-case-converter P04 | 5min | 1 tasks | 1 files |
 
 ## Accumulated Context
 
@@ -77,6 +78,8 @@ Recent decisions affecting current work:
 - [Phase 02-core-case-converter]: resolvedTheme used (not theme) for dark mode toggle to avoid 'system' string
 - [Phase 02-core-case-converter]: ToolPage uses useTranslations() hook directly since NextIntlClientProvider is already in layout.tsx
 - [Phase 02-core-case-converter]: JsonLd escapes < to \u003c per Next.js 16 json-ld.md docs for XSS safety
+- [Phase 02-core-case-converter]: generateMetadata with await params pattern established as template for all future tool pages
+- [Phase 02-core-case-converter]: tFaq.raw('items') used for next-intl v4 array access from JSON translation messages
 
 ### Pending Todos
 
@@ -90,6 +93,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-20T03:31:57.136Z
-Stopped at: Completed 02-core-case-converter/02-03-PLAN.md
+Last session: 2026-03-20T03:35:13.091Z
+Stopped at: Completed 02-core-case-converter/02-04-PLAN.md (awaiting checkpoint human-verify)
 Resume file: None
