@@ -62,10 +62,13 @@ Plans:
   2. `/sitemap.xml` is accessible and contains entries for all tool pages (EN + VI) with correct `xhtml:link` hreflang alternates referencing both locale variants per URL
   3. `/robots.txt` is accessible with correct crawl directives and sitemap reference
   4. Each tool page displays related tools navigation links that route to other working tool pages — no dead links
-**Plans**: TBD
+**Plans**: 4 plans
 
 Plans:
-- [ ] 03-01: TBD
+- [ ] 03-01-PLAN.md — Transform/generator functions (reverse, base64, slug, password) with tests + complete EN/VI translations for all 4 sub-tools
+- [ ] 03-02-PLAN.md — 4 interactive tool components + rewrite [tool]/page.tsx with dynamic TOOL_COMPONENTS dispatch, generateMetadata, JSON-LD, FAQ, RelatedTools
+- [ ] 03-03-PLAN.md — Native sitemap.ts with hreflang alternates + robots.ts with crawl directives
+- [ ] 03-04-PLAN.md — Build verification + human verification of all sub-tools, sitemap, and robots
 
 ### Phase 4: Launch Readiness
 **Goal**: The site passes all pre-launch quality gates — Core Web Vitals in "Good" range, structured data valid, hreflang verified, and the production deployment is live and confirmed working
@@ -90,5 +93,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 |-------|----------------|--------|-----------|
 | 1. Foundation Infrastructure | 2/2 | Complete   | 2026-03-19 |
 | 2. Core Case Converter | 4/4 | Complete   | 2026-03-20 |
-| 3. Sub-Tools + SEO Infrastructure | 0/? | Not started | - |
+| 3. Sub-Tools + SEO Infrastructure | 0/4 | Not started | - |
 | 4. Launch Readiness | 0/? | Not started | - |
