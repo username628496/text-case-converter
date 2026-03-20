@@ -105,5 +105,205 @@
     "toggleDark": "Toggle dark mode",
     "switchLocale": "Switch language",
     "menu": "Open menu"
+  },
+  "reverseText": {
+    "tool": {
+      "title": "Reverse Text",
+      "description": "Reverse any text string instantly \u2014 see your text backwards in real time.",
+      "placeholder": "Type or paste your text here...",
+      "textareaLabel": "Text input for reversing",
+      "charCount": "{n} characters",
+      "wordCount": "{n} words",
+      "copyBtn": "Copy",
+      "copyAria": "Copy to clipboard",
+      "copyToast": "Copied to clipboard!",
+      "clearAria": "Clear all text"
+    },
+    "faq": {
+      "heading": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "What does reverse text do?",
+          "answer": "It takes your input text and reverses the order of all characters, so 'Hello' becomes 'olleH'."
+        },
+        {
+          "question": "Does it reverse words or characters?",
+          "answer": "This tool reverses the entire string character by character. 'Hello World' becomes 'dlroW olleH'."
+        },
+        {
+          "question": "Can I reverse text with special characters?",
+          "answer": "Yes. All characters including numbers, punctuation, and Unicode characters are reversed in order."
+        },
+        {
+          "question": "Is my text stored or sent to a server?",
+          "answer": "No. All processing happens in your browser. Your text never leaves your device."
+        }
+      ]
+    },
+    "seo": {
+      "title": "Reverse Text Generator \u2014 Free Online Tool",
+      "description": "Free online reverse text generator. Instantly reverse any text string character by character \u2014 no signup required."
+    },
+    "howto": {
+      "name": "How to Reverse Text",
+      "step1": "Type or paste your text into the text area",
+      "step2": "Your text is reversed instantly as you type",
+      "step3": "Click the Copy button to copy the reversed text to your clipboard"
+    }
+  },
+  "base64": {
+    "tool": {
+      "title": "Base64 Encode/Decode",
+      "description": "Encode text to Base64 or decode Base64 back to text \u2014 instantly.",
+      "placeholder": "Type or paste text to encode/decode...",
+      "textareaLabel": "Text input for Base64 encoding/decoding",
+      "encodeTab": "Encode",
+      "decodeTab": "Decode",
+      "outputLabel": "Output",
+      "invalidBase64": "Invalid Base64 input",
+      "charCount": "{n} characters",
+      "copyBtn": "Copy",
+      "copyAria": "Copy to clipboard",
+      "copyToast": "Copied to clipboard!",
+      "clearAria": "Clear all text"
+    },
+    "faq": {
+      "heading": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "What is Base64 encoding?",
+          "answer": "Base64 is a way to represent binary data as a string of ASCII characters. It encodes every 3 bytes of data into 4 printable characters, making it safe to transmit binary data through text-based systems."
+        },
+        {
+          "question": "When should I use Base64 encoding?",
+          "answer": "Base64 is commonly used to embed images in HTML/CSS (data URIs), encode binary data in JSON or XML, and transmit data through email systems or APIs that only support text."
+        },
+        {
+          "question": "Is Base64 the same as encryption?",
+          "answer": "No. Base64 is encoding, not encryption. It does not protect your data \u2014 anyone can decode a Base64 string without a key. Do not use it to secure sensitive information."
+        },
+        {
+          "question": "Does this tool support Unicode characters?",
+          "answer": "Yes. This tool uses the TextEncoder API to correctly handle Unicode text before encoding, so emojis and non-Latin characters are fully supported."
+        },
+        {
+          "question": "Is my text stored or sent to a server?",
+          "answer": "No. All encoding and decoding happens entirely in your browser. Your text never leaves your device."
+        }
+      ]
+    },
+    "seo": {
+      "title": "Base64 Encode Decode \u2014 Free Online Tool",
+      "description": "Free online Base64 encoder and decoder. Encode text to Base64 or decode Base64 strings back to text \u2014 supports Unicode, no signup required."
+    },
+    "howto": {
+      "name": "How to Encode or Decode Base64",
+      "step1": "Select the Encode or Decode tab",
+      "step2": "Type or paste your text into the input area",
+      "step3": "The result appears instantly in the output area below",
+      "step4": "Click Copy to copy the result to your clipboard"
+    }
+  },
+  "slugGenerator": {
+    "tool": {
+      "title": "Slug Generator",
+      "description": "Generate URL-friendly slugs from any text, including Vietnamese.",
+      "placeholder": "Type or paste text to generate a slug...",
+      "textareaLabel": "Text input for slug generation",
+      "outputLabel": "Generated Slug",
+      "charCount": "{n} characters",
+      "copyBtn": "Copy",
+      "copyAria": "Copy to clipboard",
+      "copyToast": "Copied to clipboard!",
+      "clearAria": "Clear all text"
+    },
+    "faq": {
+      "heading": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "What is a slug?",
+          "answer": "A slug is the URL-friendly version of a page title. It uses only lowercase letters, numbers, and hyphens \u2014 no spaces or special characters. For example, 'Hello World' becomes 'hello-world'."
+        },
+        {
+          "question": "Does this tool support Vietnamese text?",
+          "answer": "Yes. Vietnamese diacritics are transliterated to their ASCII equivalents. For example, 'Ti\u1EBFng Vi\u1EC7t' becomes 'tieng-viet', making it ideal for creating clean URLs from Vietnamese content."
+        },
+        {
+          "question": "What happens to special characters?",
+          "answer": "Apostrophes and similar word-internal punctuation are removed without replacement. Other special characters and spaces are converted to hyphens. Multiple consecutive hyphens are collapsed into one."
+        },
+        {
+          "question": "Why are hyphens better than underscores in URLs?",
+          "answer": "Google recommends hyphens over underscores as word separators in URLs. Search engines treat hyphens as word boundaries, which can improve the readability and ranking of your URLs."
+        },
+        {
+          "question": "Is my text stored or sent to a server?",
+          "answer": "No. All slug generation happens in your browser. Your text never leaves your device."
+        }
+      ]
+    },
+    "seo": {
+      "title": "Slug Generator \u2014 Free Online URL Slug Tool",
+      "description": "Free online slug generator. Convert any text \u2014 including Vietnamese \u2014 to URL-friendly slugs instantly. No signup required."
+    },
+    "howto": {
+      "name": "How to Generate a URL Slug",
+      "step1": "Type or paste your text into the input area",
+      "step2": "The URL slug is generated instantly as you type",
+      "step3": "Click Copy to copy the slug to your clipboard"
+    }
+  },
+  "passwordGenerator": {
+    "tool": {
+      "title": "Password Generator",
+      "description": "Generate secure random passwords with customizable length and character types.",
+      "charCount": "{n} characters",
+      "copyBtn": "Copy",
+      "copyAria": "Copy to clipboard",
+      "copyToast": "Copied to clipboard!",
+      "regenerateBtn": "Regenerate",
+      "regenerateAria": "Generate new password",
+      "lengthLabel": "Password Length",
+      "uppercaseLabel": "Uppercase (A-Z)",
+      "lowercaseLabel": "Lowercase (a-z)",
+      "numbersLabel": "Numbers (0-9)",
+      "symbolsLabel": "Symbols (!@#$%...)"
+    },
+    "faq": {
+      "heading": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "How secure is the generated password?",
+          "answer": "Passwords are generated using the Web Crypto API (crypto.getRandomValues), which provides cryptographically secure random numbers. A 16-character password using all character types has over 95 bits of entropy, far beyond what can be brute-forced."
+        },
+        {
+          "question": "Is my password stored anywhere?",
+          "answer": "No. Passwords are generated entirely in your browser and never sent to any server. Once you close or refresh the page, the password is gone."
+        },
+        {
+          "question": "What symbols are included?",
+          "answer": "The symbols set includes: ! @ # $ % ^ & * ( ) _ + - = [ ] { } | ; : , . < > ? These are widely accepted by most websites and password managers."
+        },
+        {
+          "question": "What password length do you recommend?",
+          "answer": "We recommend at least 16 characters with a mix of uppercase, lowercase, numbers, and symbols. For critical accounts such as email or banking, use 20 or more characters."
+        },
+        {
+          "question": "Can I use this for passphrases?",
+          "answer": "This tool generates random character passwords, not passphrases. For passphrases, you would need a word-based generator. Both approaches are secure when the output is long enough."
+        }
+      ]
+    },
+    "seo": {
+      "title": "Password Generator \u2014 Free Secure Online Tool",
+      "description": "Free secure password generator. Create strong random passwords with custom length and character types using cryptographically secure randomness. No signup required."
+    },
+    "howto": {
+      "name": "How to Generate a Secure Password",
+      "step1": "Set your desired password length using the slider",
+      "step2": "Toggle the character types you want: uppercase, lowercase, numbers, and symbols",
+      "step3": "A secure password is generated automatically",
+      "step4": "Click Regenerate for a new password, or Copy to save the current one"
+    }
   }
 }
