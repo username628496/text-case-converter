@@ -35,8 +35,8 @@
 
 - [x] **SEO-01**: Every tool page generates dynamic metadata via generateMetadata(): title, description, canonical URL, og:image — unique per locale
 - [x] **SEO-02**: Every tool page includes JSON-LD structured data: SoftwareApplication + HowTo schema
-- [ ] **SEO-03**: Site generates an auto-updated sitemap via native app/sitemap.ts with hreflang alternates.languages entries per tool URL
-- [ ] **SEO-04**: Site has robots.ts with correct crawl directives
+- [x] **SEO-03**: Site generates an auto-updated sitemap via native app/sitemap.ts with hreflang alternates.languages entries per tool URL
+- [x] **SEO-04**: Site has robots.ts with correct crawl directives
 
 ### Infrastructure
 
@@ -99,8 +99,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEO-01 | Phase 2 | Complete |
 | SEO-02 | Phase 2 | Complete |
 | I18N-04 | Phase 2 | Complete |
-| SEO-03 | Phase 3 | Pending |
-| SEO-04 | Phase 3 | Pending |
+| SEO-03 | Phase 3 | Complete |
+| SEO-04 | Phase 3 | Complete |
 | TOOL-01 | Phase 3 | Complete |
 | TOOL-02 | Phase 3 | Complete |
 | TOOL-03 | Phase 3 | Complete |
