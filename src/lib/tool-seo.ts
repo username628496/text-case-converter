@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
 import { getToolBySlug } from '@/lib/tools'
 
-const BASE_URL = 'https://textcaseconverter.com'
+const BASE_URL = 'https://convertcase.uk'
 
 /**
  * Build Next.js Metadata for a tool page.

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { tools } from '@/lib/tools'
 
-const BASE_URL = 'https://textcaseconverter.com'
+const BASE_URL = 'https://convertcase.uk'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return tools.map((tool) => {

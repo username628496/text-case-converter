@@ -6,7 +6,7 @@ import { FAQSection } from '@/components/faq-section'
 import { ToolCards, RelatedTools } from '@/components/tool-cards'
 import { JsonLd } from '@/components/json-ld'
 
-const BASE_URL = 'https://textcaseconverter.com'
+const BASE_URL = 'https://convertcase.uk'
 
 export async function generateMetadata({
   params,
