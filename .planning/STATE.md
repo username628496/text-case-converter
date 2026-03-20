@@ -1,15 +1,15 @@
 ---
 gsd_state_version: 1.0
-milestone: v1.0
-milestone_name: MVP
-status: milestone_complete
-stopped_at: "Completed v1.0 milestone archival"
+milestone: v1.1
+milestone_name: UI Polish
+status: defining_requirements
+stopped_at: "Milestone v1.1 started"
 last_updated: "2026-03-20"
 progress:
-  total_phases: 4
-  completed_phases: 4
-  total_plans: 12
-  completed_plans: 12
+  total_phases: 0
+  completed_phases: 0
+  total_plans: 0
+  completed_plans: 0
 ---
 
 # Project State
@@ -19,12 +19,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-20)
 
 **Core value:** Fast, accurate text tools on SEO-optimized pages that rank for both English and Vietnamese search queries
-**Current focus:** Planning next milestone — v2.0
+**Current focus:** Defining requirements for v1.1 UI Polish
 
 ## Current Position
 
-v1.0 milestone COMPLETE — all 4 phases shipped.
-Next: `/gsd:new-milestone` to define v2.0 scope.
+Phase: Not started (defining requirements)
+Plan: —
+Status: Defining requirements
+Last activity: 2026-03-20 — Milestone v1.1 started
 
 ## Performance Metrics
 

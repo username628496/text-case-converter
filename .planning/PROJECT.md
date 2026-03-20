@@ -82,9 +82,27 @@ Fast, accurate text tools on SEO-optimized pages that rank for both English and 
 | t.raw('items') for i18n arrays | next-intl v4 throws MISSING_MESSAGE during SSG inside try/catch; raw() avoids the throw | ✓ All FAQ content renders correctly |
 | Domain: convertcase.uk | Shorter, cleaner domain than textcaseconverter.com | ✓ Production at convertcase.uk |
 
+## Current Milestone: v1.1 UI Polish
+
+**Goal:** Polish visual design, fix structural issues, and add missing UI components (footer, sidebar nav, mode explanations) before Google Search Console submission and AdSense activation.
+
+**Target features:**
+- Font swap (Geist → Inter with Vietnamese subset)
+- Brand color application (mint #e8f5f2 background, dark mode palette)
+- Border radius reduction across all components
+- Font size increases throughout
+- Toolbar deduplication (remove redundant Copy button)
+- Case mode tab overflow fix (horizontal scroll on small screens)
+- "How it works" section with 7-mode explanations (EN + VI)
+- FAQ visual redesign (left border, nav, color hierarchy)
+- Footer component (copyright, tagline, links, i18n)
+- Sidebar tool navigation links (grouped by category, locale-aware)
+- Layout consistency across all 5 tool pages (shared ToolPageLayout)
+- Locale switcher label fix (Tiếng Việt)
+
 ## Current State
 
-v1.0 milestone complete — all 4 phases shipped. Production live at https://convertcase.uk with 5 tools (case converter + 4 sub-tools), bilingual EN/VI, full SEO (JSON-LD, hreflang, sitemap, robots.txt), Core Web Vitals in Good range. All 9 launch quality gates passed. 59 tests passing. Domain updated from textcaseconverter.com to convertcase.uk.
+v1.0 milestone complete — all 4 phases shipped. Production live at https://convertcase.uk with 5 tools (case converter + 4 sub-tools), bilingual EN/VI, full SEO (JSON-LD, hreflang, sitemap, robots.txt), Core Web Vitals in Good range. All 9 launch quality gates passed. 59 tests passing. v1.1 UI Polish milestone started.
 
 ---
-*Last updated: 2026-03-20 after v1.0 milestone*
+*Last updated: 2026-03-20 after v1.1 milestone start*
