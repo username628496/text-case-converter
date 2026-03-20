@@ -46,10 +46,10 @@ export function PasswordGeneratorTool() {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold text-[var(--color-navy)] dark:text-zinc-100">
+      <h1 className="text-3xl font-bold text-[var(--color-navy)] dark:text-zinc-100">
         {t('title')}
       </h1>
-      <p className="text-sm text-zinc-700 dark:text-zinc-300 mt-1">
+      <p className="text-[15px] text-zinc-700 dark:text-zinc-300 mt-1">
         {t('description')}
       </p>
 
@@ -61,7 +61,7 @@ export function PasswordGeneratorTool() {
 
         {/* Toolbar */}
         <div className="flex items-center justify-between mt-2">
-          <span className="text-xs text-zinc-400" aria-live="polite">
+          <span className="text-[13px] text-zinc-400" aria-live="polite">
             {t('charCount', { n: charCount })}
           </span>
           <div className="flex items-center gap-2">
