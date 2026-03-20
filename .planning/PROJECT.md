@@ -39,6 +39,12 @@ Fast, accurate text tools on SEO-optimized pages that rank for both English and 
 - [x] Sitemap.xml and robots.txt accessible on production — Validated in Phase 04: launch-readiness
 - [x] Production deployment live at https://convertcase.uk (deployed via Vercel) — Validated in Phase 04: launch-readiness
 
+### Validated (Phase 05: visual-foundation)
+
+- [x] Inter + JetBrains Mono fonts replace Geist; mint/dark color palette tokens established (`#e8f5f2`/`#0f1a17`) — Validated in Phase 05: visual-foundation
+- [x] Typography scale: H1=30px, H2=20px, body=15px, stats=13px across all tool components — Validated in Phase 05: visual-foundation
+- [x] 3-tier border radius: 0px (FAQ), 4px (buttons/badges/tabs/chips/nav), 6px (cards/inputs/textareas) — Validated in Phase 05: visual-foundation
+
 ### Active
 
 - [ ] Remaining 30+ sub-tool pages (Text Tools, Code & Data, Font Styles, Random) — real implementations, shipped after core
@@ -83,6 +89,8 @@ Fast, accurate text tools on SEO-optimized pages that rank for both English and 
 | Domain: convertcase.uk | Shorter, cleaner domain than textcaseconverter.com | ✓ Production at convertcase.uk |
 
 ## Current Milestone: v1.1 UI Polish
+
+**Phase 05 complete** — Visual foundation shipped (fonts, colors, typography, border radius)
 
 **Goal:** Polish visual design, fix structural issues, and add missing UI components (footer, sidebar nav, mode explanations) before Google Search Console submission and AdSense activation.
 
