@@ -10,14 +10,14 @@ Requirements for the UI Polish milestone. Each maps to roadmap phases.
 ### TYPO — Typography
 
 - [x] **TYPO-01**: Inter font from `next/font/google` (latin + vietnamese subsets) replaces Geist Sans; applied as `--font-inter` CSS variable to body; all Geist references removed from layout.tsx and globals.css
-- [ ] **TYPO-02**: Body text increases to 15px (from text-sm/14px)
-- [ ] **TYPO-03**: Textarea content uses 15px, font-mono
-- [ ] **TYPO-04**: H1 headings use text-3xl (30px) font-bold (from text-2xl)
-- [ ] **TYPO-05**: H2 section headings use text-xl (20px) (from text-lg)
-- [ ] **TYPO-06**: Nav links use 14px (from 13px)
-- [ ] **TYPO-07**: Tool card titles use 14px font-medium; descriptions use 13px
-- [ ] **TYPO-08**: FAQ questions use 15px font-semibold; answers use 14px / line-height 1.7
-- [ ] **TYPO-09**: Stats display (chars · words · lines) uses 13px
+- [x] **TYPO-02**: Body text increases to 15px (from text-sm/14px)
+- [x] **TYPO-03**: Textarea content uses 15px, font-mono
+- [x] **TYPO-04**: H1 headings use text-3xl (30px) font-bold (from text-2xl)
+- [x] **TYPO-05**: H2 section headings use text-xl (20px) (from text-lg)
+- [x] **TYPO-06**: Nav links use 14px (from 13px)
+- [x] **TYPO-07**: Tool card titles use 14px font-medium; descriptions use 13px
+- [x] **TYPO-08**: FAQ questions use 15px font-semibold; answers use 14px / line-height 1.7
+- [x] **TYPO-09**: Stats display (chars · words · lines) uses 13px
 
 ### SURF — Background & Colors
 
@@ -85,14 +85,14 @@ Which phases cover which requirements. Updated during roadmap creation.
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | TYPO-01 | Phase 5 | Complete |
-| TYPO-02 | Phase 5 | Pending |
-| TYPO-03 | Phase 5 | Pending |
-| TYPO-04 | Phase 5 | Pending |
-| TYPO-05 | Phase 5 | Pending |
-| TYPO-06 | Phase 5 | Pending |
-| TYPO-07 | Phase 5 | Pending |
-| TYPO-08 | Phase 5 | Pending |
-| TYPO-09 | Phase 5 | Pending |
+| TYPO-02 | Phase 5 | Complete |
+| TYPO-03 | Phase 5 | Complete |
+| TYPO-04 | Phase 5 | Complete |
+| TYPO-05 | Phase 5 | Complete |
+| TYPO-06 | Phase 5 | Complete |
+| TYPO-07 | Phase 5 | Complete |
+| TYPO-08 | Phase 5 | Complete |
+| TYPO-09 | Phase 5 | Complete |
 | SURF-01 | Phase 5 | Complete |
 | SURF-02 | Phase 5 | Complete |
 | SURF-03 | Phase 5 | Complete |

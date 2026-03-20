@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: UI Polish
 status: unknown
-stopped_at: Completed 05-01-PLAN.md
-last_updated: "2026-03-20T14:19:11.974Z"
+stopped_at: Completed 05-02-PLAN.md
+last_updated: "2026-03-20T14:23:08.302Z"
 progress:
   total_phases: 3
   completed_phases: 0
   total_plans: 3
-  completed_plans: 1
+  completed_plans: 2
 ---
 
 # Project State
@@ -24,7 +24,7 @@ See: .planning/PROJECT.md (updated 2026-03-20)
 ## Current Position
 
 Phase: 05 (visual-foundation) — EXECUTING
-Plan: 2 of 3
+Plan: 3 of 3
 
 ## Performance Metrics
 
@@ -48,6 +48,7 @@ Plan: 2 of 3
 | Phase | Plan | Duration | Tasks | Files |
 |-------|------|----------|-------|-------|
 | 05-visual-foundation | P01 | 5 min | 2 | 2 |
+| 05-visual-foundation | P02 | 2 min | 2 | 7 |
 
 ## Accumulated Context
 
@@ -62,6 +63,7 @@ Recent decisions affecting current work:
 - [v1.0]: localeDetection: false — prevents Accept-Language redirect loops on real browsers
 - [Phase 05-visual-foundation]: Use Inter + JetBrains Mono with vietnamese subsets (not Geist) as project fonts, mapped via CSS variables to --font-sans and --font-mono
 - [Phase 05-visual-foundation]: Mint palette tokens: body background #e8f5f2 (light) / #0f1a17 (dark); card surfaces white (light) / #162520 (dark)
+- [Phase 05-visual-foundation]: Used Tailwind arbitrary values text-[15px] and text-[13px] for precise sizes not in default scale
 
 ### Pending Todos
 
@@ -79,6 +81,6 @@ None active.
 
 ## Session Continuity
 
-Last session: 2026-03-20T14:19:11.971Z
-Stopped at: Completed 05-01-PLAN.md
+Last session: 2026-03-20T14:23:08.299Z
+Stopped at: Completed 05-02-PLAN.md
 Resume file: None
