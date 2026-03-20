@@ -20,18 +20,21 @@ Fast, accurate text tools on SEO-optimized pages that rank for both English and 
 - [x] SSG (static generation) for homepage — Validated in Phase 02: core-case-converter
 - [x] Clean minimal UI, dark mode support, mobile responsive (homepage) — Validated in Phase 02: core-case-converter
 
+### Validated
+
+- [x] Sub-tool pages for v1 priority tools: Reverse Text, Base64 Encode/Decode, Slug Generator, Password Generator — Validated in Phase 03: sub-tools-seo-infrastructure
+- [x] Full EN/VI localization via next-intl for all 4 sub-tools — Validated in Phase 03: sub-tools-seo-infrastructure
+- [x] Each tool has its own route: /[tool-slug]/ (EN) and /vi/[tool-slug]/ (VI) — Validated in Phase 03: sub-tools-seo-infrastructure
+- [x] Dynamic generateMetadata() per page: title, description, canonical, og:image (all tools) — Validated in Phase 03: sub-tools-seo-infrastructure
+- [x] JSON-LD Schema (SoftwareApplication + HowTo) on every tool page — Validated in Phase 03: sub-tools-seo-infrastructure
+- [x] hreflang EN ↔ VI on all pages — Validated in Phase 03: sub-tools-seo-infrastructure
+- [x] Sitemap (native Next.js 16 API) covering all tool URLs — Validated in Phase 03: sub-tools-seo-infrastructure
+- [x] SSG (static generation) for all tool pages — Validated in Phase 03: sub-tools-seo-infrastructure
+
 ### Active
 
 - [ ] Homepage with 7-mode case converter (Sentence, lower, UPPER, Capitalized, Alternating, Title, Inverse) in a single textarea with tab switching
-- [ ] Sub-tool pages for v1 priority tools: Reverse Text, Base64 Encode/Decode, Slug Generator, Password Generator
 - [ ] Remaining 30+ sub-tool pages (Text Tools, Code & Data, Font Styles, Random) — real implementations, shipped after core
-- [ ] Full EN/VI localization via next-intl: tool names, descriptions, placeholder text, how-to copy, UI chrome
-- [ ] Each tool has its own route: /[tool-slug]/ (EN) and /vi/[tool-slug]/ (VI)
-- [ ] Dynamic generateMetadata() per page: title, description, canonical, og:image
-- [ ] JSON-LD Schema (SoftwareApplication + HowTo) on every tool page
-- [ ] hreflang EN ↔ VI on all pages
-- [ ] Auto sitemap via next-sitemap
-- [ ] SSG (static generation) for all pages
 - [ ] AdSense placeholder divs (header, sidebar, below tool) with comments — not wired up
 - [ ] Clean minimal UI, dark mode support, mobile responsive, Core Web Vitals optimized
 - [ ] Deploy to Vercel via GitHub
@@ -70,7 +73,7 @@ Fast, accurate text tools on SEO-optimized pages that rank for both English and 
 
 ## Current State
 
-Phase 02 complete — working case converter homepage live with 7 modes, dark mode, EN/VI i18n, SEO metadata, JSON-LD. Next: sub-tools + SEO infrastructure (Phase 03).
+Phase 03 complete — 4 sub-tools live (reverse text, base64, slug generator, password generator) with full SEO (per-tool metadata, JSON-LD, FAQ, RelatedTools), EN/VI i18n, sitemap.xml, robots.txt. 15 static pages, 59 tests passing. Next: launch readiness (Phase 04).
 
 ---
-*Last updated: 2026-03-20 after Phase 02: core-case-converter*
+*Last updated: 2026-03-20 after Phase 03: sub-tools-seo-infrastructure*
