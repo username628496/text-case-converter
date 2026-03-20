@@ -9,7 +9,7 @@ Requirements for the UI Polish milestone. Each maps to roadmap phases.
 
 ### TYPO — Typography
 
-- [ ] **TYPO-01**: Inter font from `next/font/google` (latin + vietnamese subsets) replaces Geist Sans; applied as `--font-inter` CSS variable to body; all Geist references removed from layout.tsx and globals.css
+- [x] **TYPO-01**: Inter font from `next/font/google` (latin + vietnamese subsets) replaces Geist Sans; applied as `--font-inter` CSS variable to body; all Geist references removed from layout.tsx and globals.css
 - [ ] **TYPO-02**: Body text increases to 15px (from text-sm/14px)
 - [ ] **TYPO-03**: Textarea content uses 15px, font-mono
 - [ ] **TYPO-04**: H1 headings use text-3xl (30px) font-bold (from text-2xl)
@@ -21,9 +21,9 @@ Requirements for the UI Polish milestone. Each maps to roadmap phases.
 
 ### SURF — Background & Colors
 
-- [ ] **SURF-01**: Light mode page body background is #e8f5f2 (mint green)
-- [ ] **SURF-02**: Dark mode page body background is #0f1a17
-- [ ] **SURF-03**: Surface cards, textarea containers, nav, and footer use white (#fff) in light mode
+- [x] **SURF-01**: Light mode page body background is #e8f5f2 (mint green)
+- [x] **SURF-02**: Dark mode page body background is #0f1a17
+- [x] **SURF-03**: Surface cards, textarea containers, nav, and footer use white (#fff) in light mode
 
 ### SHAPE — Border Radius
 
@@ -84,7 +84,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| TYPO-01 | Phase 5 | Pending |
+| TYPO-01 | Phase 5 | Complete |
 | TYPO-02 | Phase 5 | Pending |
 | TYPO-03 | Phase 5 | Pending |
 | TYPO-04 | Phase 5 | Pending |
@@ -93,9 +93,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | TYPO-07 | Phase 5 | Pending |
 | TYPO-08 | Phase 5 | Pending |
 | TYPO-09 | Phase 5 | Pending |
-| SURF-01 | Phase 5 | Pending |
-| SURF-02 | Phase 5 | Pending |
-| SURF-03 | Phase 5 | Pending |
+| SURF-01 | Phase 5 | Complete |
+| SURF-02 | Phase 5 | Complete |
+| SURF-03 | Phase 5 | Complete |
 | SHAPE-01 | Phase 5 | Pending |
 | SHAPE-02 | Phase 5 | Pending |
 | SHAPE-03 | Phase 5 | Pending |

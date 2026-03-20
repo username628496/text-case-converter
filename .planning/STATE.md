@@ -2,16 +2,14 @@
 gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: UI Polish
-status: planning
-stopped_at: Phase 5 context gathered
-last_updated: "2026-03-20T08:17:23.786Z"
-last_activity: 2026-03-20 — v1.1 roadmap created (Phases 5-7, 33 requirements mapped)
+status: unknown
+stopped_at: Completed 05-01-PLAN.md
+last_updated: "2026-03-20T14:19:11.974Z"
 progress:
   total_phases: 3
   completed_phases: 0
-  total_plans: 0
-  completed_plans: 0
-  percent: 0
+  total_plans: 3
+  completed_plans: 1
 ---
 
 # Project State
@@ -21,16 +19,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-20)
 
 **Core value:** Fast, accurate text tools on SEO-optimized pages that rank for both English and Vietnamese search queries
-**Current focus:** Phase 5 — Visual Foundation (v1.1 UI Polish)
+**Current focus:** Phase 05 — visual-foundation
 
 ## Current Position
 
-Phase: 5 of 7 (Visual Foundation)
-Plan: Not started
-Status: Ready to plan
-Last activity: 2026-03-20 — v1.1 roadmap created (Phases 5-7, 33 requirements mapped)
-
-Progress: [░░░░░░░░░░] 0% (v1.1)
+Phase: 05 (visual-foundation) — EXECUTING
+Plan: 2 of 3
 
 ## Performance Metrics
 
@@ -49,7 +43,11 @@ Progress: [░░░░░░░░░░] 0% (v1.1)
 | 03-sub-tools-seo-infrastructure | 4 | ~5 min |
 | 04-launch-readiness | 2 | ~6 min |
 
-*v1.1 metrics will populate as plans complete*
+*v1.1 metrics:*
+
+| Phase | Plan | Duration | Tasks | Files |
+|-------|------|----------|-------|-------|
+| 05-visual-foundation | P01 | 5 min | 2 | 2 |
 
 ## Accumulated Context
 
@@ -62,6 +60,8 @@ Recent decisions affecting current work:
 - [v1.0]: t.raw('items') for i18n arrays — next-intl v4 throws MISSING_MESSAGE inside try/catch during SSG
 - [v1.0]: React Compiler enabled — no manual useMemo/useCallback in Client Components
 - [v1.0]: localeDetection: false — prevents Accept-Language redirect loops on real browsers
+- [Phase 05-visual-foundation]: Use Inter + JetBrains Mono with vietnamese subsets (not Geist) as project fonts, mapped via CSS variables to --font-sans and --font-mono
+- [Phase 05-visual-foundation]: Mint palette tokens: body background #e8f5f2 (light) / #0f1a17 (dark); card surfaces white (light) / #162520 (dark)
 
 ### Pending Todos
 
@@ -79,6 +79,6 @@ None active.
 
 ## Session Continuity
 
-Last session: 2026-03-20T08:17:23.783Z
-Stopped at: Phase 5 context gathered
-Resume file: .planning/phases/05-visual-foundation/05-CONTEXT.md
+Last session: 2026-03-20T14:19:11.971Z
+Stopped at: Completed 05-01-PLAN.md
+Resume file: None
