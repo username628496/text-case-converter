@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 03-03-PLAN.md
-last_updated: "2026-03-20T05:14:46.396Z"
+stopped_at: Completed 03-02-PLAN.md
+last_updated: "2026-03-20T05:17:56.330Z"
 progress:
   total_phases: 4
   completed_phases: 2
   total_plans: 10
-  completed_plans: 8
+  completed_plans: 9
 ---
 
 # Project State
@@ -55,6 +55,7 @@ Plan: 1 of 4
 | Phase 02-core-case-converter P04 | 15min | 2 tasks | 1 files |
 | Phase 03-sub-tools-seo-infrastructure P01 | 10min | 2 tasks | 7 files |
 | Phase 03-sub-tools-seo-infrastructure P03-03 | 1min | 2 tasks | 2 files |
+| Phase 03-sub-tools-seo-infrastructure P02 | 3min | 2 tasks | 8 files |
 
 ## Accumulated Context
 
@@ -90,6 +91,8 @@ Recent decisions affecting current work:
 - [Phase 03]: generatePassword defaults to lowercase when all toggles disabled — ensures valid output always returned
 - [Phase 03]: sitemap.ts at app root generates xhtml:link hreflang entries via alternates.languages; confirmed against Next.js 16 docs
 - [Phase 03]: Both sitemap.ts and robots.ts render as static pages — no dynamic data dependencies
+- [Phase 03-sub-tools-seo-infrastructure]: t.raw('howto') used instead of try/catch t('howto.step4') — next-intl v4 throws MISSING_MESSAGE during SSG even inside try/catch; raw() avoids the throw
+- [Phase 03-sub-tools-seo-infrastructure]: i18nNamespace field added to Tool interface to drive getTranslations namespace selection in buildToolMetadata and buildToolJsonLd
 
 ### Pending Todos
 
@@ -103,6 +106,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-20T05:14:46.393Z
-Stopped at: Completed 03-03-PLAN.md
+Last session: 2026-03-20T05:17:56.325Z
+Stopped at: Completed 03-02-PLAN.md
 Resume file: None
