@@ -12,7 +12,13 @@ Fast, accurate text tools on SEO-optimized pages that rank for both English and 
 
 ### Validated
 
-(None yet — ship to validate)
+- [x] Homepage with 7-mode case converter (Sentence, lower, UPPER, Capitalized, Alternating, Title, Inverse) in a single textarea with tab switching — Validated in Phase 02: core-case-converter
+- [x] Full EN/VI localization via next-intl: tool names, descriptions, placeholder text, how-to copy, UI chrome (homepage) — Validated in Phase 02: core-case-converter
+- [x] Dynamic generateMetadata() per page: title, description, canonical, og:image (homepage) — Validated in Phase 02: core-case-converter
+- [x] JSON-LD Schema (SoftwareApplication + HowTo) on homepage — Validated in Phase 02: core-case-converter
+- [x] hreflang EN ↔ VI on homepage — Validated in Phase 02: core-case-converter
+- [x] SSG (static generation) for homepage — Validated in Phase 02: core-case-converter
+- [x] Clean minimal UI, dark mode support, mobile responsive (homepage) — Validated in Phase 02: core-case-converter
 
 ### Active
 
@@ -57,10 +63,14 @@ Fast, accurate text tools on SEO-optimized pages that rank for both English and 
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Core tools first, expand iteratively | Ship fast with highest-value pages, add remaining 30+ tools in subsequent phases | — Pending |
-| Full VI translation (not just metadata) | Vietnamese is a primary audience, not an afterthought — partial translation hurts credibility | — Pending |
-| Each tool = its own URL | SEO-critical: individual pages rank for specific tool queries | — Pending |
-| SSG for all pages | Core Web Vitals + SEO — no runtime server needed | — Pending |
+| Core tools first, expand iteratively | Ship fast with highest-value pages, add remaining 30+ tools in subsequent phases | ✓ Phase 02 homepage delivered |
+| Full VI translation (not just metadata) | Vietnamese is a primary audience, not an afterthought — partial translation hurts credibility | ✓ Full EN/VI with proper diacritics |
+| Each tool = its own URL | SEO-critical: individual pages rank for specific tool queries | ✓ Route structure in place |
+| SSG for all pages | Core Web Vitals + SEO — no runtime server needed | ✓ 13 routes statically generated |
+
+## Current State
+
+Phase 02 complete — working case converter homepage live with 7 modes, dark mode, EN/VI i18n, SEO metadata, JSON-LD. Next: sub-tools + SEO infrastructure (Phase 03).
 
 ---
-*Last updated: 2026-03-19 after initialization*
+*Last updated: 2026-03-20 after Phase 02: core-case-converter*
