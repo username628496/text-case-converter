@@ -31,13 +31,18 @@ Fast, accurate text tools on SEO-optimized pages that rank for both English and 
 - [x] Sitemap (native Next.js 16 API) covering all tool URLs — Validated in Phase 03: sub-tools-seo-infrastructure
 - [x] SSG (static generation) for all tool pages — Validated in Phase 03: sub-tools-seo-infrastructure
 
+### Validated (Phase 04: launch-readiness)
+
+- [x] Core Web Vitals: LCP < 2.5s (homepage 2133ms, password-generator 2056ms), CLS = 0.00 on both — Validated in Phase 04: launch-readiness
+- [x] Google Rich Results Test passes for SoftwareApplication + HowTo schema on homepage and sub-tool pages — Validated in Phase 04: launch-readiness
+- [x] Bidirectional hreflang EN ↔ VI confirmed on all pages via production view-source — Validated in Phase 04: launch-readiness
+- [x] Sitemap.xml and robots.txt accessible on production — Validated in Phase 04: launch-readiness
+- [x] Production deployment live at https://convertcase.uk (deployed via Vercel) — Validated in Phase 04: launch-readiness
+
 ### Active
 
-- [ ] Homepage with 7-mode case converter (Sentence, lower, UPPER, Capitalized, Alternating, Title, Inverse) in a single textarea with tab switching
 - [ ] Remaining 30+ sub-tool pages (Text Tools, Code & Data, Font Styles, Random) — real implementations, shipped after core
 - [ ] AdSense placeholder divs (header, sidebar, below tool) with comments — not wired up
-- [ ] Clean minimal UI, dark mode support, mobile responsive, Core Web Vitals optimized
-- [ ] Deploy to Vercel via GitHub
 
 ### Out of Scope
 
@@ -73,7 +78,7 @@ Fast, accurate text tools on SEO-optimized pages that rank for both English and 
 
 ## Current State
 
-Phase 03 complete — 4 sub-tools live (reverse text, base64, slug generator, password generator) with full SEO (per-tool metadata, JSON-LD, FAQ, RelatedTools), EN/VI i18n, sitemap.xml, robots.txt. 15 static pages, 59 tests passing. Next: launch readiness (Phase 04).
+v1.0 milestone complete — all 4 phases shipped. Production live at https://convertcase.uk with 5 tools (case converter + 4 sub-tools), bilingual EN/VI, full SEO (JSON-LD, hreflang, sitemap, robots.txt), Core Web Vitals in Good range. All 9 launch quality gates passed. 59 tests passing. Domain updated from textcaseconverter.com to convertcase.uk.
 
 ---
-*Last updated: 2026-03-20 after Phase 03: sub-tools-seo-infrastructure*
+*Last updated: 2026-03-20 after Phase 04: launch-readiness*
