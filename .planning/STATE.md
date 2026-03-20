@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Phase 2 context gathered
-last_updated: "2026-03-19T18:03:27.105Z"
+stopped_at: Completed 02-core-case-converter/02-01-PLAN.md
+last_updated: "2026-03-20T03:27:47.023Z"
 progress:
   total_phases: 4
   completed_phases: 1
-  total_plans: 2
-  completed_plans: 2
+  total_plans: 6
+  completed_plans: 3
 ---
 
 # Project State
@@ -19,12 +19,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-19)
 
 **Core value:** Fast, accurate text tools on SEO-optimized pages that rank for both English and Vietnamese search queries
-**Current focus:** Phase 01 — foundation-infrastructure
+**Current focus:** Phase 02 — core-case-converter
 
 ## Current Position
 
-Phase: 01 (foundation-infrastructure) — EXECUTING
-Plan: 2 of 2
+Phase: 02 (core-case-converter) — EXECUTING
+Plan: 2 of 4
 
 ## Performance Metrics
 
@@ -48,6 +48,7 @@ Plan: 2 of 2
 *Updated after each plan completion*
 | Phase 01 P02 | 5 | 1 tasks | 4 files |
 | Phase 01-foundation-infrastructure P02 | 1 day | 2 tasks | 6 files |
+| Phase 02-core-case-converter P01 | 4 min | 2 tasks | 10 files |
 
 ## Accumulated Context
 
@@ -67,6 +68,9 @@ Recent decisions affecting current work:
 - [Phase 01]: lang attribute set to en in root layout as Phase 1 default; hreflang (Phase 3) is primary SEO locale signal
 - [Phase 01-foundation-infrastructure]: proxy.ts must live in src/ for Next.js 16 — project root placement silently ignored; moved during Vercel debugging
 - [Phase 01-foundation-infrastructure]: localeDetection: false set in routing.ts — as-needed prefix conflicts with Accept-Language auto-redirect on real browsers
+- [Phase 02-core-case-converter]: ThemeProvider approach for dark mode: next-themes with defaultTheme=system enableSystem satisfies CORE-08 and enables future manual toggle
+- [Phase 02-core-case-converter]: vi.json full rewrite: fixed ASCII approximations to proper Vietnamese Unicode diacritics in one commit
+- [Phase 02-core-case-converter]: Vitest v4 (not Jest): ESM-native, no Babel needed for React 19/TypeScript
 
 ### Pending Todos
 
@@ -80,6 +84,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-19T18:03:27.102Z
-Stopped at: Phase 2 context gathered
-Resume file: .planning/phases/02-core-case-converter/02-CONTEXT.md
+Last session: 2026-03-20T03:27:47.020Z
+Stopped at: Completed 02-core-case-converter/02-01-PLAN.md
+Resume file: None
