@@ -27,15 +27,15 @@ Requirements for the UI Polish milestone. Each maps to roadmap phases.
 
 ### SHAPE — Border Radius
 
-- [ ] **SHAPE-01**: Primary buttons (Copy, Regenerate) use 4px border radius
-- [ ] **SHAPE-02**: Secondary/ghost buttons use 4px border radius
-- [ ] **SHAPE-03**: Case mode tab pills use 4px border radius
-- [ ] **SHAPE-04**: Badge abbreviations (Sc, lc, UC, Cc, aC, TC, iC) use 4px border radius (from rounded-full)
-- [ ] **SHAPE-05**: Tool cards use 6px border radius (rounded-md)
-- [ ] **SHAPE-06**: Textarea and input containers use 6px border radius
-- [ ] **SHAPE-07**: FAQ AccordionItems use 0px border radius (square)
-- [ ] **SHAPE-08**: Related tool chip links use 4px border radius
-- [ ] **SHAPE-09**: Nav item hover backgrounds use 4px border radius
+- [x] **SHAPE-01**: Primary buttons (Copy, Regenerate) use 4px border radius
+- [x] **SHAPE-02**: Secondary/ghost buttons use 4px border radius
+- [x] **SHAPE-03**: Case mode tab pills use 4px border radius
+- [x] **SHAPE-04**: Badge abbreviations (Sc, lc, UC, Cc, aC, TC, iC) use 4px border radius (from rounded-full)
+- [x] **SHAPE-05**: Tool cards use 6px border radius (rounded-md)
+- [x] **SHAPE-06**: Textarea and input containers use 6px border radius
+- [x] **SHAPE-07**: FAQ AccordionItems use 0px border radius (square)
+- [x] **SHAPE-08**: Related tool chip links use 4px border radius
+- [x] **SHAPE-09**: Nav item hover backgrounds use 4px border radius
 
 ### COMP — Component Fixes
 
@@ -96,15 +96,15 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SURF-01 | Phase 5 | Complete |
 | SURF-02 | Phase 5 | Complete |
 | SURF-03 | Phase 5 | Complete |
-| SHAPE-01 | Phase 5 | Pending |
-| SHAPE-02 | Phase 5 | Pending |
-| SHAPE-03 | Phase 5 | Pending |
-| SHAPE-04 | Phase 5 | Pending |
-| SHAPE-05 | Phase 5 | Pending |
-| SHAPE-06 | Phase 5 | Pending |
-| SHAPE-07 | Phase 5 | Pending |
-| SHAPE-08 | Phase 5 | Pending |
-| SHAPE-09 | Phase 5 | Pending |
+| SHAPE-01 | Phase 5 | Complete |
+| SHAPE-02 | Phase 5 | Complete |
+| SHAPE-03 | Phase 5 | Complete |
+| SHAPE-04 | Phase 5 | Complete |
+| SHAPE-05 | Phase 5 | Complete |
+| SHAPE-06 | Phase 5 | Complete |
+| SHAPE-07 | Phase 5 | Complete |
+| SHAPE-08 | Phase 5 | Complete |
+| SHAPE-09 | Phase 5 | Complete |
 | COMP-01 | Phase 6 | Pending |
 | COMP-02 | Phase 6 | Pending |
 | COMP-03 | Phase 6 | Pending |
