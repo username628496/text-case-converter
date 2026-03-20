@@ -5,6 +5,7 @@ import { ToolPage } from '@/components/tool-page'
 import { FAQSection } from '@/components/faq-section'
 import { ToolCards, RelatedTools } from '@/components/tool-cards'
 import { JsonLd } from '@/components/json-ld'
+import { HowItWorksSection } from '@/components/how-it-works-section'
 
 const BASE_URL = 'https://convertcase.uk'
 
@@ -45,11 +46,13 @@ export default async function HomePage({
   const tFaq = await getTranslations({ locale, namespace: 'faq' })
   const tRelated = await getTranslations({ locale, namespace: 'related' })
   const tHowto = await getTranslations({ locale, namespace: 'howto' })
+  const tHowItWorks = await getTranslations({ locale, namespace: 'howItWorks' })
   const tTools = await getTranslations({ locale, namespace: 'tools' })
 
   // Extract FAQ items from translations
   // next-intl v4: use raw() to get array
   const faqItems = tFaq.raw('items') as Array<{ question: string; answer: string }>
+  const howItWorksModes = tHowItWorks.raw('modes') as Record<string, { name: string; description: string; before: string; after: string }>
 
   // Build tool names lookup for ToolCards and RelatedTools
   const toolNames: Record<string, { name: string; description: string }> = {}
@@ -94,6 +97,12 @@ export default async function HomePage({
   return (
     <div>
       <ToolPage />
+
+      <HowItWorksSection
+        heading={tHowItWorks('heading')}
+        subheading={tHowItWorks('subheading')}
+        modes={howItWorksModes}
+      />
 
       <ToolCards locale={locale} toolNames={toolNames} />
 
