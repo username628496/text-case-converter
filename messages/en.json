@@ -97,6 +97,54 @@
     "step3": "Your text converts instantly as you select the tab",
     "step4": "Click the Copy button to copy the converted text to your clipboard"
   },
+  "howItWorks": {
+    "heading": "How It Works",
+    "subheading": "See how each text case mode transforms your text",
+    "modes": {
+      "sentence": {
+        "name": "Sentence case",
+        "description": "Capitalize the first letter of each sentence while converting everything else to lowercase. Perfect for cleaning up messy text into readable paragraphs.",
+        "before": "tHe QuIcK bRoWn FoX",
+        "after": "The quick brown fox"
+      },
+      "lower": {
+        "name": "lower case",
+        "description": "Convert all text to lowercase letters instantly. Ideal for normalizing data, creating CSS class names, or preparing text for case-sensitive comparisons.",
+        "before": "tHe QuIcK bRoWn FoX",
+        "after": "the quick brown fox"
+      },
+      "upper": {
+        "name": "UPPER CASE",
+        "description": "Transform your entire text to uppercase letters online. Commonly used for headings, acronyms, emphasis, or formatting text for official documents.",
+        "before": "tHe QuIcK bRoWn FoX",
+        "after": "THE QUICK BROWN FOX"
+      },
+      "capital": {
+        "name": "Capitalized Case",
+        "description": "Capitalize the first letter of every word in your text. Great for formatting names, titles, addresses, or any text where each word should start with a capital letter.",
+        "before": "tHe QuIcK bRoWn FoX",
+        "after": "The Quick Brown Fox"
+      },
+      "alternating": {
+        "name": "aLtErNaTiNg CaSe",
+        "description": "Switch each character between lowercase and uppercase, starting with lowercase. Popular for memes, sarcastic text, and playful social media posts.",
+        "before": "tHe QuIcK bRoWn FoX",
+        "after": "tHe qUiCk bRoWn fOx"
+      },
+      "title": {
+        "name": "Title Case",
+        "description": "Apply professional title capitalization following AP/Chicago style rules. Short words like 'a', 'the', 'of' stay lowercase unless they start the title.",
+        "before": "tHe QuIcK bRoWn FoX",
+        "after": "The Quick Brown Fox"
+      },
+      "inverse": {
+        "name": "iNVERSE CaSe",
+        "description": "Flip the case of every letter \u2014 uppercase becomes lowercase and vice versa. Useful for creative text effects and reversing accidental caps lock typing.",
+        "before": "tHe QuIcK bRoWn FoX",
+        "after": "ThE qUiCk BrOwN fOx"
+      }
+    }
+  },
   "nav": {
     "textTools": "Text Tools",
     "codeData": "Code & Data",
