@@ -34,7 +34,7 @@ Full details: `.planning/milestones/v1.0-ROADMAP.md`
 
 #### Phase 7: Navigation + Layout
 
-- [ ] **Phase 7: Navigation + Layout** - Footer, sidebar tool nav, and ToolPageLayout consistency across all 5 tool pages
+- [x] **Phase 7: Navigation + Layout** - Footer, sidebar tool nav, and ToolPageLayout consistency across all 5 tool pages (completed 2026-03-21)
 
 ## Phase Details
 
@@ -98,4 +98,4 @@ Plans:
 | 4. Launch Readiness | v1.0 | 2/2 | Complete | 2026-03-20 |
 | 5. Visual Foundation | v1.1 | 3/3 | Complete | 2026-03-20 |
 | 6. Component Fixes + Content | 2/2 | Complete   | 2026-03-20 | - |
-| 7. Navigation + Layout | 2/3 | In Progress|  | - |
+| 7. Navigation + Layout | 3/3 | Complete   | 2026-03-21 | - |

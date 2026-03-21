@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: UI Polish
 status: unknown
-stopped_at: Completed 07-02-PLAN.md
-last_updated: "2026-03-21T06:42:12.755Z"
+stopped_at: Completed 07-03-PLAN.md
+last_updated: "2026-03-21T06:46:48.339Z"
 progress:
   total_phases: 3
-  completed_phases: 2
+  completed_phases: 3
   total_plans: 8
-  completed_plans: 7
+  completed_plans: 8
 ---
 
 # Project State
@@ -54,6 +54,7 @@ Plan: 1 of 3
 | Phase 06-component-fixes-content P02 | 3 | 2 tasks | 4 files |
 | Phase 07-navigation-layout P01 | 2min | 2 tasks | 3 files |
 | Phase 07 P02 | 2 min | 2 tasks | 4 files |
+| Phase 07-navigation-layout P03 | 4 | 2 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -81,6 +82,8 @@ Recent decisions affecting current work:
 - [Phase 07-navigation-layout]: space-y-8 for section spacing instead of margin utilities to avoid collapse issues
 - [Phase 07]: Footer inserted before <Toaster /> and after main content div in locale layout
 - [Phase 07]: Footer uses Server Component pattern (async, no 'use client') consistent with project conventions
+- [Phase 07-navigation-layout]: toolGroups data built in Server Component layout.tsx and passed as props to Client Component SiteNav — avoids importing async Server Component into Client Component
+- [Phase 07-navigation-layout]: SidebarNav receives currentSlug=undefined from layout; active sidebar link state is deferred to tool page level
 
 ### Pending Todos
 
@@ -98,6 +101,6 @@ None active.
 
 ## Session Continuity
 
-Last session: 2026-03-21T06:42:12.753Z
-Stopped at: Completed 07-02-PLAN.md
+Last session: 2026-03-21T06:46:48.336Z
+Stopped at: Completed 07-03-PLAN.md
 Resume file: None

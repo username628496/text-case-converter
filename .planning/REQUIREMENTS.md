@@ -54,8 +54,8 @@ Requirements for the UI Polish milestone. Each maps to roadmap phases.
 
 - [x] **NAV-01**: Footer component added to `[locale]/layout.tsx`: 3-column desktop layout with copyright, tagline, 4 placeholder links (Privacy Policy · Terms of Service · Sitemap · Contact), and bottom "Made with ❤ for Vietnamese and English users" strip
 - [x] **NAV-02**: Footer supports dark mode (dark:bg-zinc-950 dark:border-zinc-800) and is fully i18n translated in en.json and vi.json with proper Vietnamese diacritics
-- [ ] **NAV-03**: Sidebar adds grouped tool navigation links (Text Tools, Code & Data, Random categories) below the ad slot, with locale-prefixed URLs and active page styling (navy + mint tint)
-- [ ] **NAV-04**: Sidebar tool links are accessible in the mobile Sheet drawer
+- [x] **NAV-03**: Sidebar adds grouped tool navigation links (Text Tools, Code & Data, Random categories) below the ad slot, with locale-prefixed URLs and active page styling (navy + mint tint)
+- [x] **NAV-04**: Sidebar tool links are accessible in the mobile Sheet drawer
 
 ### LAYOUT — Consistency
 
@@ -114,8 +114,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CONT-04 | Phase 6 | Complete |
 | NAV-01 | Phase 7 | Complete |
 | NAV-02 | Phase 7 | Complete |
-| NAV-03 | Phase 7 | Pending |
-| NAV-04 | Phase 7 | Pending |
+| NAV-03 | Phase 7 | Complete |
+| NAV-04 | Phase 7 | Complete |
 | LAYOUT-01 | Phase 7 | Complete |
 
 **Coverage:**
