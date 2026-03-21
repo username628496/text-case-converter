@@ -81,10 +81,12 @@ Plans:
   3. The sidebar below the ad slot shows grouped tool navigation links (Text Tools, Code & Data, Random categories) with locale-prefixed URLs; the current page link is styled with navy + mint tint
   4. The sidebar tool links are accessible inside the mobile Sheet drawer
   5. All 5 tool pages share the same ToolPageLayout: identical container width, H1 size, description size, card border, section spacing, and section order (tool area -> below-tool content -> FAQ -> related tools)
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 07-01: TBD
+- [ ] 07-01-PLAN.md — ToolPageLayout wrapper component applied to all 5 tool pages
+- [ ] 07-02-PLAN.md — Footer component with EN/VI i18n translations and dark mode support
+- [ ] 07-03-PLAN.md — SidebarNav component with tool groups, mobile drawer integration
 
 ## Progress
 
@@ -96,4 +98,4 @@ Plans:
 | 4. Launch Readiness | v1.0 | 2/2 | Complete | 2026-03-20 |
 | 5. Visual Foundation | v1.1 | 3/3 | Complete | 2026-03-20 |
 | 6. Component Fixes + Content | 2/2 | Complete   | 2026-03-20 | - |
-| 7. Navigation + Layout | v1.1 | 0/? | Not started | - |
+| 7. Navigation + Layout | v1.1 | 0/3 | Not started | - |
