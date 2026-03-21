@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import { generatePassword, type PasswordOptions } from '@/lib/password-generator'
 import { toast } from 'sonner'
@@ -19,7 +19,8 @@ const DEFAULT_OPTIONS: PasswordOptions = {
 export function PasswordGeneratorTool() {
   const t = useTranslations('passwordGenerator.tool')
   const [options, setOptions] = useState<PasswordOptions>(DEFAULT_OPTIONS)
-  const [password, setPassword] = useState(() => generatePassword(DEFAULT_OPTIONS))
+  const [password, setPassword] = useState('')
+  useEffect(() => { setPassword(generatePassword(DEFAULT_OPTIONS)) }, [])
 
   const handleRegenerate = () => {
     setPassword(generatePassword(options))
