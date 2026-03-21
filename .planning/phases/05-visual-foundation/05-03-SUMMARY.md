@@ -72,7 +72,7 @@ completed: 2026-03-20
 1. **Task 1: Update border radius in all 8 shadcn UI primitive components** - `490bd92` (feat)
 2. **Task 2: Update border radius at usage sites** - `599b826` (feat)
 
-**Plan metadata:** (docs commit follows)
+**Plan metadata:** `6d98d21` (docs)
 
 ## Files Created/Modified
 

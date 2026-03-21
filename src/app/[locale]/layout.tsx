@@ -86,14 +86,6 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider>
-      {/* Header ad slot: 90px min-height */}
-      <div
-        className="min-h-[90px] w-full bg-zinc-50 dark:bg-zinc-900 flex items-center justify-center text-xs text-zinc-400"
-        aria-hidden="true"
-        data-ad-slot="header"
-      >
-        {tLayout('adPlaceholder')}
-      </div>
       <SiteNav
         locale={locale}
         siteName={t('siteName')}

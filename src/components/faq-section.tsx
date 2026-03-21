@@ -13,12 +13,12 @@ interface FAQSectionProps {
 
 export function FAQSection({ heading, items }: FAQSectionProps) {
   return (
-    <section aria-labelledby="faq-heading" className="mt-10">
+    <section aria-labelledby="faq-heading" className="mt-12 pt-8 border-t border-[#c5e0d8]">
       <h2
         id="faq-heading"
-        className="text-xl font-semibold text-[var(--color-navy)] dark:text-zinc-200 mb-4 flex items-center gap-2"
+        className="text-xl font-bold text-[#1a2744] dark:text-zinc-200 mb-4 flex items-center gap-2"
       >
-        <HelpCircle className="h-5 w-5" />
+        <HelpCircle className="h-[18px] w-[18px] text-[#1a2744] dark:text-zinc-400" />
         {heading}
       </h2>
       <Accordion type="single" collapsible>
@@ -26,12 +26,12 @@ export function FAQSection({ heading, items }: FAQSectionProps) {
           <AccordionItem
             key={i}
             value={`item-${i}`}
-            className="border-b data-[state=open]:border-l-[3px] data-[state=open]:border-l-[#1a2744] data-[state=open]:pl-4"
+            className="border-b data-[state=open]:border-l-4 data-[state=open]:border-l-[#1a2744] data-[state=open]:pl-4 data-[state=open]:bg-[#f8fffe] data-[state=open]:rounded-r-md"
           >
-            <AccordionTrigger className="text-[15px] font-semibold text-zinc-700 dark:text-zinc-300 no-underline hover:no-underline data-[state=open]:text-[#1a2744] dark:data-[state=open]:text-zinc-100">
+            <AccordionTrigger className="text-base font-semibold text-zinc-800 dark:text-zinc-200 hover:text-[#1a2744] dark:hover:text-zinc-100 hover:no-underline py-5">
               {item.question}
             </AccordionTrigger>
-            <AccordionContent className="text-sm leading-[1.7] text-zinc-500 dark:text-zinc-400">
+            <AccordionContent className="text-[15px] leading-relaxed text-zinc-600 dark:text-zinc-400 pb-5">
               {item.answer}
             </AccordionContent>
           </AccordionItem>

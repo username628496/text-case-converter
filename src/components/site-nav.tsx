@@ -134,7 +134,7 @@ export function SiteNav({ locale, siteName, translations, toolGroups }: SiteNavP
             {/* Random Generators */}
             <NavigationMenuItem>
               <NavigationMenuTrigger>{translations.randomGenerators}</NavigationMenuTrigger>
-              <NavigationMenuContent>
+              <NavigationMenuContent className="left-auto right-0">
                 <ul className="p-2 w-52">
                   {(toolGroups[2]?.tools ?? []).map((tool) => (
                     <li key={tool.slug}>

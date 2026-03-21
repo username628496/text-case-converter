@@ -75,25 +75,25 @@ export function RelatedTools({ heading, locale, relatedSlugs, toolNames }: Relat
     .filter(Boolean)
 
   return (
-    <section aria-labelledby="related-heading" className="mt-8">
+    <section aria-labelledby="related-heading" className="mt-10 pt-6 border-t border-[#c5e0d8]">
       <h2
         id="related-heading"
-        className="text-xl font-semibold text-[var(--color-navy)] dark:text-zinc-200 mb-3"
+        className="text-xl font-bold text-[#1a2744] dark:text-zinc-200 mb-4"
       >
         {heading}
       </h2>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-3">
         {relatedTools.map(
           tool =>
             tool && (
               <a
                 key={tool.slug}
                 href={tool.href}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-[4px] border border-[var(--color-border-brand)] text-sm text-zinc-700 dark:text-zinc-300 dark:border-zinc-700 hover:border-[var(--color-navy)] hover:text-[var(--color-navy)] transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2.5 bg-white dark:bg-zinc-800 border border-[#c5e0d8] dark:border-zinc-700 rounded-[4px] text-[14px] text-zinc-700 dark:text-zinc-300 font-medium hover:border-[#1a2744] hover:text-[#1a2744] hover:bg-[#f0faf7] dark:hover:border-zinc-500 dark:hover:text-zinc-100 transition-all duration-150"
               >
                 <Badge
                   style={{ backgroundColor: tool.display.color }}
-                  className="text-white text-xs w-5 h-5 justify-center p-0 border-transparent"
+                  className="text-white text-[10px] font-bold w-[22px] h-[22px] justify-center p-0 border-transparent rounded-[3px] shrink-0"
                 >
                   {tool.display.abbr}
                 </Badge>
