@@ -11,6 +11,7 @@ import { ReverseTextTool } from '@/components/tools/reverse-text-tool'
 import { Base64Tool } from '@/components/tools/base64-tool'
 import { SlugGeneratorTool } from '@/components/tools/slug-generator-tool'
 import { PasswordGeneratorTool } from '@/components/tools/password-generator-tool'
+import { ToolPageLayout } from '@/components/tool-page-layout'
 
 const TOOL_COMPONENTS: Record<string, ComponentType> = {
   'reverse-text': ReverseTextTool,
@@ -71,22 +72,23 @@ export default async function ToolPage({
   const jsonLd = await buildToolJsonLd(toolSlug, locale)
 
   return (
-    <div>
-      <ToolComponent />
-
-      <FAQSection
-        heading={tTool('faq.heading')}
-        items={faqItems}
-      />
-
-      <RelatedTools
-        heading={tRelated('heading')}
-        locale={locale}
-        relatedSlugs={tool.relatedSlugs}
-        toolNames={toolNames}
-      />
-
-      <JsonLd data={jsonLd} />
-    </div>
+    <ToolPageLayout
+      toolArea={<ToolComponent />}
+      faqSection={
+        <FAQSection
+          heading={tTool('faq.heading')}
+          items={faqItems}
+        />
+      }
+      relatedTools={
+        <RelatedTools
+          heading={tRelated('heading')}
+          locale={locale}
+          relatedSlugs={tool.relatedSlugs}
+          toolNames={toolNames}
+        />
+      }
+      jsonLd={<JsonLd data={jsonLd} />}
+    />
   )
 }

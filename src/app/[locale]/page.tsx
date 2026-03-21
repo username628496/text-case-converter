@@ -6,6 +6,7 @@ import { FAQSection } from '@/components/faq-section'
 import { ToolCards, RelatedTools } from '@/components/tool-cards'
 import { JsonLd } from '@/components/json-ld'
 import { HowItWorksSection } from '@/components/how-it-works-section'
+import { ToolPageLayout } from '@/components/tool-page-layout'
 
 const BASE_URL = 'https://convertcase.uk'
 
@@ -95,30 +96,33 @@ export default async function HomePage({
   }
 
   return (
-    <div>
-      <ToolPage />
-
-      <HowItWorksSection
-        heading={tHowItWorks('heading')}
-        subheading={tHowItWorks('subheading')}
-        modes={howItWorksModes}
-      />
-
-      <ToolCards locale={locale} toolNames={toolNames} />
-
-      <FAQSection
-        heading={tFaq('heading')}
-        items={faqItems}
-      />
-
-      <RelatedTools
-        heading={tRelated('heading')}
-        locale={locale}
-        relatedSlugs={homepageTool.relatedSlugs}
-        toolNames={toolNames}
-      />
-
-      <JsonLd data={jsonLd} />
-    </div>
+    <ToolPageLayout
+      toolArea={<ToolPage />}
+      belowTool={
+        <>
+          <HowItWorksSection
+            heading={tHowItWorks('heading')}
+            subheading={tHowItWorks('subheading')}
+            modes={howItWorksModes}
+          />
+          <ToolCards locale={locale} toolNames={toolNames} />
+        </>
+      }
+      faqSection={
+        <FAQSection
+          heading={tFaq('heading')}
+          items={faqItems}
+        />
+      }
+      relatedTools={
+        <RelatedTools
+          heading={tRelated('heading')}
+          locale={locale}
+          relatedSlugs={homepageTool.relatedSlugs}
+          toolNames={toolNames}
+        />
+      }
+      jsonLd={<JsonLd data={jsonLd} />}
+    />
   )
 }
