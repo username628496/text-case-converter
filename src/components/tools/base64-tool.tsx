@@ -8,11 +8,13 @@ import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Copy, Trash2 } from 'lucide-react'
+import { SubToolHowItWorks } from '@/components/tools/sub-tool-how-it-works'
 
 type Mode = 'encode' | 'decode'
 
 export function Base64Tool() {
   const t = useTranslations('base64.tool')
+  const tHiw = useTranslations('base64')
   const [inputText, setInputText] = useState('')
   const [mode, setMode] = useState<Mode>('encode')
 
@@ -105,6 +107,10 @@ export function Base64Tool() {
           </div>
         </div>
       </Card>
+      <SubToolHowItWorks
+        heading={tHiw('howItWorks.heading')}
+        cards={tHiw.raw('howItWorks.cards') as Array<{ badge: string; badgeColor: string; title: string; description: string; example: string }>}
+      />
     </div>
   )
 }

@@ -7,6 +7,7 @@ import { toast } from 'sonner'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Copy } from 'lucide-react'
+import { SubToolHowItWorks } from '@/components/tools/sub-tool-how-it-works'
 
 const DEFAULT_OPTIONS: PasswordOptions = {
   length: 16,
@@ -18,6 +19,7 @@ const DEFAULT_OPTIONS: PasswordOptions = {
 
 export function PasswordGeneratorTool() {
   const t = useTranslations('passwordGenerator.tool')
+  const tHiw = useTranslations('passwordGenerator')
   const [options, setOptions] = useState<PasswordOptions>(DEFAULT_OPTIONS)
   const [password, setPassword] = useState('')
   useEffect(() => { setPassword(generatePassword(DEFAULT_OPTIONS)) }, [])
@@ -135,6 +137,10 @@ export function PasswordGeneratorTool() {
           </Button>
         </div>
       </Card>
+      <SubToolHowItWorks
+        heading={tHiw('howItWorks.heading')}
+        cards={tHiw.raw('howItWorks.cards') as Array<{ badge: string; badgeColor: string; title: string; description: string; example: string }>}
+      />
     </div>
   )
 }

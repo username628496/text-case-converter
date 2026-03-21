@@ -8,9 +8,11 @@ import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Copy, Trash2 } from 'lucide-react'
+import { SubToolHowItWorks } from '@/components/tools/sub-tool-how-it-works'
 
 export function ReverseTextTool() {
   const t = useTranslations('reverseText.tool')
+  const tHiw = useTranslations('reverseText')
   const [inputText, setInputText] = useState('')
 
   const output = reverseText(inputText)
@@ -73,6 +75,10 @@ export function ReverseTextTool() {
           </div>
         </div>
       </Card>
+      <SubToolHowItWorks
+        heading={tHiw('howItWorks.heading')}
+        cards={tHiw.raw('howItWorks.cards') as Array<{ badge: string; badgeColor: string; title: string; description: string; example: string }>}
+      />
     </div>
   )
 }

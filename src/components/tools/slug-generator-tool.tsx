@@ -8,9 +8,11 @@ import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Copy, Trash2 } from 'lucide-react'
+import { SubToolHowItWorks } from '@/components/tools/sub-tool-how-it-works'
 
 export function SlugGeneratorTool() {
   const t = useTranslations('slugGenerator.tool')
+  const tHiw = useTranslations('slugGenerator')
   const [inputText, setInputText] = useState('')
 
   const output = generateSlug(inputText)
@@ -70,6 +72,10 @@ export function SlugGeneratorTool() {
           </div>
         </div>
       </Card>
+      <SubToolHowItWorks
+        heading={tHiw('howItWorks.heading')}
+        cards={tHiw.raw('howItWorks.cards') as Array<{ badge: string; badgeColor: string; title: string; description: string; example: string }>}
+      />
     </div>
   )
 }

@@ -199,6 +199,32 @@
       "step1": "Type or paste your text into the text area",
       "step2": "Your text is reversed instantly as you type",
       "step3": "Click the Copy button to copy the reversed text to your clipboard"
+    },
+    "howItWorks": {
+      "heading": "How Reverse Text Works",
+      "cards": [
+        {
+          "badge": "Rv",
+          "badgeColor": "#2563eb",
+          "title": "Reverse Characters",
+          "description": "Instantly reverse every character in your text online — ideal for creating mirror text, checking palindromes, or generating reversed strings for coding projects.",
+          "example": "\"Hello World\" → \"dlroW olleH\""
+        },
+        {
+          "badge": "Rw",
+          "badgeColor": "#0891b2",
+          "title": "Reverse Words",
+          "description": "Flip the order of words while keeping each word intact. Use this free reverse word order tool for creative writing, puzzles, or text manipulation tasks.",
+          "example": "\"the quick brown fox\" → \"fox brown quick the\""
+        },
+        {
+          "badge": "Fc",
+          "badgeColor": "#9333ea",
+          "title": "Fun & Creative Uses",
+          "description": "Reverse text generator popular for secret messages, backwards text social media posts, and fun username ideas. Works with Vietnamese, English, and special characters.",
+          "example": "\"Xin chào Việt Nam\" → \"maN tệiV oàhc niX\""
+        }
+      ]
     }
   },
   "base64": {
@@ -252,6 +278,32 @@
       "step2": "Type or paste your text into the input area",
       "step3": "The result appears instantly in the output area below",
       "step4": "Click Copy to copy the result to your clipboard"
+    },
+    "howItWorks": {
+      "heading": "What is Base64 Encoding?",
+      "cards": [
+        {
+          "badge": "B6",
+          "badgeColor": "#16a34a",
+          "title": "Base64 Encode",
+          "description": "Convert text or data to Base64 encoded strings online — the standard encoding format used in email attachments, JWT tokens, data URLs, and API authentication headers.",
+          "example": "\"Hello World\" → \"SGVsbG8gV29ybGQ=\""
+        },
+        {
+          "badge": "D6",
+          "badgeColor": "#ea580c",
+          "title": "Base64 Decode",
+          "description": "Decode Base64 strings back to readable text instantly. Essential for developers debugging API responses, reading encoded cookies, or inspecting JWT payloads.",
+          "example": "\"SGVsbG8gV29ybGQ=\" → \"Hello World\""
+        },
+        {
+          "badge": "Uc",
+          "badgeColor": "#4f46e5",
+          "title": "Common Use Cases",
+          "description": "Base64 encoding is used in HTML image src (data:image/png;base64,...), CSS backgrounds, email MIME encoding, and storing binary data as text in JSON or XML.",
+          "example": "data:image/png;base64,iVBOR..."
+        }
+      ]
     }
   },
   "slugGenerator": {
@@ -301,6 +353,32 @@
       "step1": "Type or paste your text into the input area",
       "step2": "The URL slug is generated instantly as you type",
       "step3": "Click Copy to copy the slug to your clipboard"
+    },
+    "howItWorks": {
+      "heading": "What is a URL Slug?",
+      "cards": [
+        {
+          "badge": "Sg",
+          "badgeColor": "#0891b2",
+          "title": "URL-Friendly Slugs",
+          "description": "A slug is the readable part of a URL after the domain. Our slug generator converts any text to lowercase, replaces spaces with hyphens, and removes special characters for clean SEO-friendly URLs.",
+          "example": "\"Hướng Dẫn SEO 2026\" → \"huong-dan-seo-2026\""
+        },
+        {
+          "badge": "Vi",
+          "badgeColor": "#dc2626",
+          "title": "Vietnamese Support",
+          "description": "Full Vietnamese diacritics support — automatically converts ắ, ề, ổ, ượ and all Vietnamese characters to their ASCII equivalents. Perfect for Vietnamese bloggers and developers.",
+          "example": "\"Chuyển Đổi Chữ Hoa\" → \"chuyen-doi-chu-hoa\""
+        },
+        {
+          "badge": "Sp",
+          "badgeColor": "#ca8a04",
+          "title": "SEO Best Practices",
+          "description": "Search engines prefer short, descriptive slugs with keywords. This tool follows slug best practices: all lowercase, hyphens not underscores, no stop words, max 60 characters recommended.",
+          "example": "\"How to Convert Text Case Online Free\" → \"how-to-convert-text-case-online-free\""
+        }
+      ]
     }
   },
   "footer": {
@@ -363,6 +441,32 @@
       "step2": "Toggle the character types you want: uppercase, lowercase, numbers, and symbols",
       "step3": "A secure password is generated automatically",
       "step4": "Click Regenerate for a new password, or Copy to save the current one"
+    },
+    "howItWorks": {
+      "heading": "How to Create a Strong Password",
+      "cards": [
+        {
+          "badge": "Rp",
+          "badgeColor": "#1a2744",
+          "title": "Random Password Generation",
+          "description": "Generate cryptographically random passwords using uppercase, lowercase, numbers, and symbols. Strong random passwords are impossible to guess and protect against brute-force attacks.",
+          "example": "\"4]VS:cLJ9#mK2@nP\""
+        },
+        {
+          "badge": "Ps",
+          "badgeColor": "#16a34a",
+          "title": "Password Length & Strength",
+          "description": "Security experts recommend passwords of at least 16 characters. Each additional character exponentially increases the number of possible combinations, making your password stronger.",
+          "example": "8 chars = 645 trillion combos · 16 chars = 62 trillion trillion"
+        },
+        {
+          "badge": "St",
+          "badgeColor": "#2563eb",
+          "title": "Password Security Tips",
+          "description": "Never reuse passwords across sites. Use a password manager to store unique passwords for each account. Enable two-factor authentication (2FA) for critical accounts like email and banking.",
+          "example": "Use different passwords for Gmail, Facebook, banking, shopping"
+        }
+      ]
     }
   }
 }
