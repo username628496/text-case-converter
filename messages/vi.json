@@ -301,6 +301,15 @@
       "step3": "Nh\u1EA5p Sao ch\u00E9p \u0111\u1EC3 sao ch\u00E9p slug v\u00E0o clipboard"
     }
   },
+  "footer": {
+    "copyright": "© {year} Chuy\u1EC3n \u0110\u1ED5i Ch\u1EEF Hoa Th\u01B0\u1EDDng",
+    "tagline": "C\u00F4ng c\u1EE5 v\u0103n b\u1EA3n nhanh, ch\u00EDnh x\u00E1c cho ng\u01B0\u1EDDi d\u00F9ng ti\u1EBFng Anh v\u00E0 ti\u1EBFng Vi\u1EC7t.",
+    "privacyPolicy": "Ch\u00EDnh S\u00E1ch B\u1EA3o M\u1EADt",
+    "termsOfService": "\u0110i\u1EC1u Kho\u1EA3n D\u1ECBch V\u1EE5",
+    "sitemap": "S\u01A1 \u0110\u1ED3 Trang",
+    "contact": "Li\u00EAn H\u1EC7",
+    "madeWith": "L\u00E0m v\u1EDBi \u2665 d\u00E0nh cho ng\u01B0\u1EDDi d\u00F9ng ti\u1EBFng Vi\u1EC7t v\u00E0 ti\u1EBFng Anh"
+  },
   "passwordGenerator": {
     "tool": {
       "title": "T\u1EA1o M\u1EADt Kh\u1EA9u",

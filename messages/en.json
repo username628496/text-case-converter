@@ -301,6 +301,15 @@
       "step3": "Click Copy to copy the slug to your clipboard"
     }
   },
+  "footer": {
+    "copyright": "© {year} Text Case Converter",
+    "tagline": "Fast, accurate text tools for English and Vietnamese users.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "sitemap": "Sitemap",
+    "contact": "Contact",
+    "madeWith": "Made with ♥ for Vietnamese and English users"
+  },
   "passwordGenerator": {
     "tool": {
       "title": "Password Generator",
