@@ -60,37 +60,93 @@ export function SiteNav({ locale, siteName, translations, toolGroups }: SiteNavP
           href={logoHref}
           className="flex items-center gap-2 text-[var(--color-navy)] dark:text-zinc-100 font-bold text-lg"
         >
+          <span
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: 28,
+              height: 28,
+              borderRadius: 4,
+              backgroundColor: '#1a2744',
+              color: 'white',
+              fontSize: 11,
+              fontWeight: 700,
+              flexShrink: 0,
+            }}
+          >
+            Tt
+          </span>
           {siteName}
         </a>
 
         {/* Desktop nav */}
         <NavigationMenu className="hidden lg:flex">
           <NavigationMenuList>
+            {/* Text Tools */}
             <NavigationMenuItem>
               <NavigationMenuTrigger>{translations.textTools}</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="p-3 w-48" />
+                <ul className="p-2 w-52">
+                  {(toolGroups[0]?.tools ?? []).map((tool) => (
+                    <li key={tool.slug}>
+                      <a
+                        href={tool.href}
+                        className="block px-3 py-2 rounded-[4px] text-[14px] text-zinc-700 dark:text-zinc-300 hover:bg-[#e8f5f2] dark:hover:bg-zinc-800 hover:text-[#1a2744] transition-colors"
+                      >
+                        {tool.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
 
+            {/* Code & Data */}
             <NavigationMenuItem>
               <NavigationMenuTrigger>{translations.codeData}</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="p-3 w-48" />
+                <ul className="p-2 w-52">
+                  {(toolGroups[1]?.tools ?? []).map((tool) => (
+                    <li key={tool.slug}>
+                      <a
+                        href={tool.href}
+                        className="block px-3 py-2 rounded-[4px] text-[14px] text-zinc-700 dark:text-zinc-300 hover:bg-[#e8f5f2] dark:hover:bg-zinc-800 hover:text-[#1a2744] transition-colors"
+                      >
+                        {tool.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
 
+            {/* Font Styles — coming soon */}
             <NavigationMenuItem>
-              <NavigationMenuTrigger>{translations.fontStyles}</NavigationMenuTrigger>
+              <NavigationMenuTrigger className="opacity-50 cursor-not-allowed">{translations.fontStyles}</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="p-3 w-48" />
+                <ul className="p-2 w-52">
+                  <li className="px-3 py-2 text-[13px] text-zinc-400 italic">Coming soon</li>
+                </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
 
+            {/* Random Generators */}
             <NavigationMenuItem>
               <NavigationMenuTrigger>{translations.randomGenerators}</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="p-3 w-48" />
+                <ul className="p-2 w-52">
+                  {(toolGroups[2]?.tools ?? []).map((tool) => (
+                    <li key={tool.slug}>
+                      <a
+                        href={tool.href}
+                        className="block px-3 py-2 rounded-[4px] text-[14px] text-zinc-700 dark:text-zinc-300 hover:bg-[#e8f5f2] dark:hover:bg-zinc-800 hover:text-[#1a2744] transition-colors"
+                      >
+                        {tool.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
           </NavigationMenuList>
@@ -120,7 +176,7 @@ export function SiteNav({ locale, siteName, translations, toolGroups }: SiteNavP
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" size="sm" className="text-sm" aria-label={translations.switchLocale}>
-                {locale === 'en' ? '🇺🇸 EN' : '🇻🇳 Tiếng Việt'}
+                {locale === 'en' ? '🇺🇸 EN' : '🇻🇳 VI'}
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>

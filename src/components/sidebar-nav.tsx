@@ -1,10 +1,12 @@
+'use client'
+
 import Link from 'next/link'
-import { getTranslations } from 'next-intl/server'
+import { usePathname } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 import { tools } from '@/lib/tools'
 
 interface SidebarNavProps {
   locale: string
-  currentSlug?: string // active tool slug, e.g. 'reverse-text'; undefined on homepage
 }
 
 const TOOL_GROUPS = [
@@ -13,11 +15,10 @@ const TOOL_GROUPS = [
   { labelKey: 'randomGenerators', category: 'generator', color: '#7c3aed' },
 ] as const
 
-export { TOOL_GROUPS }
-
-export async function SidebarNav({ locale, currentSlug }: SidebarNavProps) {
-  const tNav = await getTranslations({ locale, namespace: 'nav' })
-  const tTools = await getTranslations({ locale, namespace: 'tools' })
+export function SidebarNav({ locale }: SidebarNavProps) {
+  const pathname = usePathname()
+  const tNav = useTranslations('nav')
+  const tTools = useTranslations('tools')
 
   return (
     <nav
@@ -53,9 +54,10 @@ export async function SidebarNav({ locale, currentSlug }: SidebarNavProps) {
                     ? `/${tool.slug}/`
                     : `/vi/${tool.slug}/`
 
-                const isActive = tool.isHomepage
-                  ? currentSlug === undefined
-                  : currentSlug === tool.slug
+                // Normalize: compare without trailing slash to be robust
+                const normalizedPathname = pathname.replace(/\/$/, '') || '/'
+                const normalizedHref = href.replace(/\/$/, '') || '/'
+                const isActive = normalizedPathname === normalizedHref
 
                 const toolSubKey = tool.i18nKey.replace('tools.', '')
                 const toolName = tTools(`${toolSubKey}.name` as Parameters<typeof tTools>[0])
@@ -84,7 +86,7 @@ export async function SidebarNav({ locale, currentSlug }: SidebarNavProps) {
                           fontSize: 10,
                           fontWeight: 700,
                           color: 'white',
-                          backgroundColor: color,
+                          backgroundColor: isActive ? 'rgba(255,255,255,0.2)' : color,
                           flexShrink: 0,
                         }}
                       >

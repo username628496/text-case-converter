@@ -135,7 +135,7 @@ export function ToolPage() {
                 className={
                   activeMode === mode.id
                     ? 'inline-flex items-center gap-2 px-3 py-1.5 rounded-[4px] text-sm font-medium whitespace-nowrap min-h-[44px] transition-colors duration-150 bg-[var(--color-navy)] text-white'
-                    : 'inline-flex items-center gap-2 px-3 py-1.5 rounded-[4px] text-sm whitespace-nowrap min-h-[44px] transition-colors duration-150 bg-white dark:bg-zinc-800 border border-[var(--color-border-brand)] dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:border-[var(--color-navy)] hover:text-[var(--color-navy)]'
+                    : 'inline-flex items-center gap-2 px-3 py-1.5 rounded-[4px] text-sm whitespace-nowrap min-h-[44px] transition-colors duration-150 bg-white dark:bg-zinc-800 border border-[var(--color-border-brand)] dark:border-zinc-700 text-zinc-700 dark:text-zinc-200 hover:border-[var(--color-navy)] hover:text-[var(--color-navy)] dark:hover:border-zinc-400 dark:hover:text-white'
                 }
               >
                 <Badge

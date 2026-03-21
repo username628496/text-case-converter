@@ -1,6 +1,13 @@
+import type { Metadata } from 'next'
 import { Inter, JetBrains_Mono } from 'next/font/google'
 import { ThemeProvider } from 'next-themes'
 import './globals.css'
+
+export const metadata: Metadata = {
+  icons: {
+    icon: '/favicon.svg',
+  },
+}
 
 const inter = Inter({
   variable: '--font-inter',
