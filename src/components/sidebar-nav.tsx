@@ -22,7 +22,7 @@ export function SidebarNav({ locale }: SidebarNavProps) {
 
   return (
     <nav
-      className="sticky top-20 mt-4 bg-white dark:bg-zinc-900 border-l border-[#c5e0d8] dark:border-zinc-700"
+      className="sticky top-20 mt-4 bg-white dark:bg-zinc-900 border border-[#c5e0d8] dark:border-zinc-700 rounded-md"
       style={{ padding: '16px 12px' }}
       aria-label={tNav('sidebarTools')}
     >

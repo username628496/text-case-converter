@@ -121,13 +121,6 @@ export default async function LocaleLayout({
         {/* Sidebar column -- hidden on mobile */}
         <aside className="hidden lg:block w-64 shrink-0">
           {/* Sidebar ad slot: 250px min-height — PRESERVE AS-IS */}
-          <div
-            className="min-h-[250px] w-full bg-zinc-50 dark:bg-zinc-900 flex items-center justify-center text-xs text-zinc-400 sticky top-6"
-            aria-hidden="true"
-            data-ad-slot="sidebar"
-          >
-            {tLayout('adPlaceholder')}
-          </div>
           {/* Sidebar tool navigation — added in Phase 07 */}
           <SidebarNav locale={locale} />
         </aside>
