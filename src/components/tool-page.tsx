@@ -53,7 +53,7 @@ export function ToolPage() {
   }
 
   return (
-    <div>
+    <div className="w-full">
       <h1 className="text-3xl font-bold text-[var(--color-navy)] dark:text-zinc-100">
         {t('title')}
       </h1>
@@ -61,7 +61,7 @@ export function ToolPage() {
         {t('description')}
       </p>
 
-      <Card className="mt-4 p-4 border-[var(--color-border-brand)]">
+      <Card className="mt-4 p-4 w-full border-[var(--color-border-brand)]">
         <Label htmlFor="text-input" className="sr-only">
           {t('textareaLabel')}
         </Label>

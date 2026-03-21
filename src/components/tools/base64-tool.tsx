@@ -34,7 +34,7 @@ export function Base64Tool() {
   const handleClear = () => setInputText('')
 
   return (
-    <div>
+    <div className="w-full">
       <h1 className="text-3xl font-bold text-[var(--color-navy)] dark:text-zinc-100">
         {t('title')}
       </h1>
@@ -42,7 +42,7 @@ export function Base64Tool() {
         {t('description')}
       </p>
 
-      <Card className="mt-4 p-4 border-[var(--color-border-brand)]">
+      <Card className="mt-4 p-4 w-full border-[var(--color-border-brand)]">
         {/* Mode tabs */}
         <div className="flex gap-2 mb-3" role="tablist">
           {(['encode', 'decode'] as Mode[]).map(m => (

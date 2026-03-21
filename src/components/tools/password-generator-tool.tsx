@@ -46,7 +46,7 @@ export function PasswordGeneratorTool() {
   const charCount = password.length
 
   return (
-    <div>
+    <div className="w-full">
       <h1 className="text-3xl font-bold text-[var(--color-navy)] dark:text-zinc-100">
         {t('title')}
       </h1>
@@ -54,7 +54,7 @@ export function PasswordGeneratorTool() {
         {t('description')}
       </p>
 
-      <Card className="mt-4 p-4 border-[var(--color-border-brand)]">
+      <Card className="mt-4 p-4 w-full border-[var(--color-border-brand)]">
         {/* Password output */}
         <div className="p-4 rounded-md bg-zinc-50 dark:bg-zinc-900 border border-[var(--color-border-brand)] font-mono text-lg text-zinc-800 dark:text-zinc-200 select-all break-all min-h-[64px] flex items-center">
           {password}
