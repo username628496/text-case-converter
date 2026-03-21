@@ -10,7 +10,7 @@ interface ToolPageLayoutProps {
 
 export function ToolPageLayout({ toolArea, belowTool, faqSection, relatedTools, jsonLd }: ToolPageLayoutProps) {
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 w-full">
       {/* 1. Tool area */}
       <div>{toolArea}</div>
 
