@@ -9,52 +9,52 @@ export async function Footer({ locale }: FooterProps) {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="mt-12 border-t border-[var(--color-border-brand)] bg-white dark:bg-zinc-950 dark:border-zinc-800">
-      <div className="max-w-6xl mx-auto px-4 py-8">
+    <footer className="border-t border-[#c5e0d8] bg-white dark:bg-zinc-950 dark:border-zinc-800">
+      <div className="max-w-6xl mx-auto px-4 py-10">
         {/* 3-column desktop, single-column mobile */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
-          {/* Column 1: Copyright */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          {/* Col 1: Logo + copyright + tagline */}
           <div>
-            <p className="font-semibold text-[var(--color-navy)] dark:text-zinc-100 text-sm">
+            <p className="font-bold text-[var(--color-navy)] dark:text-zinc-100">
+              Text Case Converter
+            </p>
+            <p className="text-sm text-zinc-400 dark:text-zinc-500 mt-1">
               {tFooter('copyright', { year })}
             </p>
-          </div>
-          {/* Column 2: Tagline */}
-          <div>
-            <p className="text-sm text-zinc-600 dark:text-zinc-400">
+            <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">
               {tFooter('tagline')}
             </p>
           </div>
-          {/* Column 3: Placeholder links */}
-          <div>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#" className="text-[var(--color-navy)] dark:text-zinc-300 hover:underline">
-                  {tFooter('privacyPolicy')}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-[var(--color-navy)] dark:text-zinc-300 hover:underline">
-                  {tFooter('termsOfService')}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-[var(--color-navy)] dark:text-zinc-300 hover:underline">
-                  {tFooter('sitemap')}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-[var(--color-navy)] dark:text-zinc-300 hover:underline">
-                  {tFooter('contact')}
-                </a>
-              </li>
-            </ul>
+
+          {/* Col 2: 2×2 link grid */}
+          <div className="grid grid-cols-2 gap-x-4 gap-y-2 content-start">
+            {([
+              ['privacyPolicy', '#'],
+              ['termsOfService', '#'],
+              ['sitemap', '#'],
+              ['contact', '#'],
+            ] as const).map(([key, href]) => (
+              <a
+                key={key}
+                href={href}
+                className="text-[13px] text-zinc-500 dark:text-zinc-400 hover:text-[var(--color-navy)] dark:hover:text-zinc-100 transition-colors"
+              >
+                {tFooter(key)}
+              </a>
+            ))}
+          </div>
+
+          {/* Col 3: Tagline blurb (right-aligned on desktop) */}
+          <div className="sm:text-right">
+            <p className="text-sm text-zinc-500 dark:text-zinc-400">
+              Free tools for English and Vietnamese users
+            </p>
           </div>
         </div>
 
         {/* Bottom strip */}
-        <div className="border-t border-[var(--color-border-brand)] dark:border-zinc-800 pt-4 text-center text-sm text-zinc-500 dark:text-zinc-400">
-          {tFooter('madeWith')}
+        <div className="border-t border-[#f0f0f0] dark:border-zinc-800 mt-8 pt-4 text-center text-xs text-zinc-400 dark:text-zinc-500">
+          {tFooter('madeWith')} · convertcase.uk
         </div>
       </div>
     </footer>

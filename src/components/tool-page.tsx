@@ -8,7 +8,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area'
+
 import { Label } from '@/components/ui/label'
 import { Copy, Trash2, Download } from 'lucide-react'
 
@@ -112,9 +112,17 @@ export function ToolPage() {
         </div>
 
         {/* Case mode tabs */}
-        <ScrollArea className="mt-3">
+        <div
+          className="mt-3"
+          style={{
+            overflowX: 'auto',
+            scrollbarWidth: 'none',
+            WebkitOverflowScrolling: 'touch',
+          } as React.CSSProperties}
+        >
           <div
-            className="flex gap-2 pb-1"
+            className="flex gap-2"
+            style={{ paddingBottom: 4 }}
             role="tablist"
             onKeyDown={handleTabKeyDown}
           >
@@ -140,8 +148,7 @@ export function ToolPage() {
               </button>
             ))}
           </div>
-          <ScrollBar orientation="horizontal" />
-        </ScrollArea>
+        </div>
       </Card>
     </div>
   )

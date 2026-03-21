@@ -127,7 +127,7 @@ export default async function LocaleLayout({
         </main>
 
         {/* Sidebar column -- hidden on mobile */}
-        <aside className="hidden lg:block w-72 shrink-0">
+        <aside className="hidden lg:block w-64 shrink-0">
           {/* Sidebar ad slot: 250px min-height — PRESERVE AS-IS */}
           <div
             className="min-h-[250px] w-full bg-zinc-50 dark:bg-zinc-900 flex items-center justify-center text-xs text-zinc-400 sticky top-6"
