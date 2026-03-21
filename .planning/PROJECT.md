@@ -54,6 +54,13 @@ Fast, accurate text tools on SEO-optimized pages that rank for both English and 
 - [x] "How It Works" homepage section with 7 mode cards (badge, name, description, before/after examples) — Validated in Phase 06: component-fixes-content
 - [x] Full EN and VI translations for all 7 How It Works mode cards — Validated in Phase 06: component-fixes-content
 
+### Validated (Phase 07: navigation-layout)
+
+- [x] ToolPageLayout Server Component wrapper enforcing consistent section order (toolArea → belowTool? → faqSection → relatedTools → jsonLd?) applied to all 5 tool pages — Validated in Phase 07: navigation-layout
+- [x] Footer Server Component with EN/VI i18n (7 keys), 3-column responsive grid, dark mode — wired into locale layout, visible on all 15 pages — Validated in Phase 07: navigation-layout
+- [x] SidebarNav Server Component with 3 grouped tool categories, locale-prefixed URLs, active page styling — wired into desktop sidebar — Validated in Phase 07: navigation-layout
+- [x] Mobile Sheet drawer updated with real tool links replacing all "Coming soon" placeholders — Validated in Phase 07: navigation-layout
+
 ### Active
 
 - [ ] Remaining 30+ sub-tool pages (Text Tools, Code & Data, Font Styles, Random) — real implementations, shipped after core
@@ -99,7 +106,7 @@ Fast, accurate text tools on SEO-optimized pages that rank for both English and 
 
 ## Current Milestone: v1.1 UI Polish
 
-**Phase 06 complete** — Component fixes and How It Works section shipped
+**Phase 07 complete** — Navigation layout shipped (ToolPageLayout, Footer, SidebarNav)
 
 **Goal:** Polish visual design, fix structural issues, and add missing UI components (footer, sidebar nav, mode explanations) before Google Search Console submission and AdSense activation.
 
