@@ -98,4 +98,4 @@ Plans:
 | 4. Launch Readiness | v1.0 | 2/2 | Complete | 2026-03-20 |
 | 5. Visual Foundation | v1.1 | 3/3 | Complete | 2026-03-20 |
 | 6. Component Fixes + Content | 2/2 | Complete   | 2026-03-20 | - |
-| 7. Navigation + Layout | v1.1 | 0/3 | Not started | - |
+| 7. Navigation + Layout | 2/3 | In Progress|  | - |

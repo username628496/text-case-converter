@@ -59,7 +59,7 @@ Requirements for the UI Polish milestone. Each maps to roadmap phases.
 
 ### LAYOUT — Consistency
 
-- [ ] **LAYOUT-01**: All 5 tool pages share a ToolPageLayout pattern with identical container width, H1 size, description size, card border, spacing between sections, and section order (tool area → below-tool content → FAQ → related tools)
+- [x] **LAYOUT-01**: All 5 tool pages share a ToolPageLayout pattern with identical container width, H1 size, description size, card border, spacing between sections, and section order (tool area → below-tool content → FAQ → related tools)
 
 ## Future Requirements
 
@@ -116,7 +116,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | NAV-02 | Phase 7 | Pending |
 | NAV-03 | Phase 7 | Pending |
 | NAV-04 | Phase 7 | Pending |
-| LAYOUT-01 | Phase 7 | Pending |
+| LAYOUT-01 | Phase 7 | Complete |
 
 **Coverage:**
 - v1.1 requirements: 33 total
