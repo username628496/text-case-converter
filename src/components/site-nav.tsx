@@ -36,10 +36,15 @@ interface SiteNavProps {
     toggleDark: string
     switchLocale: string
     menu: string
+    sidebarTools: string
   }
+  toolGroups: Array<{
+    label: string
+    tools: Array<{ name: string; href: string; slug: string }>
+  }>
 }
 
-export function SiteNav({ locale, siteName, translations }: SiteNavProps) {
+export function SiteNav({ locale, siteName, translations, toolGroups }: SiteNavProps) {
   const { resolvedTheme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
@@ -155,30 +160,25 @@ export function SiteNav({ locale, siteName, translations }: SiteNavProps) {
                 <SheetTitle>{siteName}</SheetTitle>
               </SheetHeader>
               <nav className="mt-6 space-y-6">
-                <div>
-                  <h3 className="text-xs font-semibold text-zinc-400 uppercase tracking-wider">
-                    {translations.textTools}
-                  </h3>
-                  <p className="text-sm text-zinc-500 mt-2 italic">Coming soon</p>
-                </div>
-                <div>
-                  <h3 className="text-xs font-semibold text-zinc-400 uppercase tracking-wider">
-                    {translations.codeData}
-                  </h3>
-                  <p className="text-sm text-zinc-500 mt-2 italic">Coming soon</p>
-                </div>
-                <div>
-                  <h3 className="text-xs font-semibold text-zinc-400 uppercase tracking-wider">
-                    {translations.fontStyles}
-                  </h3>
-                  <p className="text-sm text-zinc-500 mt-2 italic">Coming soon</p>
-                </div>
-                <div>
-                  <h3 className="text-xs font-semibold text-zinc-400 uppercase tracking-wider">
-                    {translations.randomGenerators}
-                  </h3>
-                  <p className="text-sm text-zinc-500 mt-2 italic">Coming soon</p>
-                </div>
+                {toolGroups.map((group) => (
+                  <div key={group.label}>
+                    <h3 className="text-xs font-semibold text-zinc-400 uppercase tracking-wider">
+                      {group.label}
+                    </h3>
+                    <ul className="mt-2 space-y-1">
+                      {group.tools.map((tool) => (
+                        <li key={tool.slug}>
+                          <a
+                            href={tool.href}
+                            className="block px-2 py-1.5 rounded-[4px] text-sm text-zinc-700 dark:text-zinc-300 hover:bg-[var(--color-mint)] dark:hover:bg-zinc-800 hover:text-[var(--color-navy)]"
+                          >
+                            {tool.name}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
               </nav>
             </SheetContent>
           </Sheet>

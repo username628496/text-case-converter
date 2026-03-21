@@ -5,6 +5,8 @@ import { routing } from '@/i18n/routing'
 import { Toaster } from '@/components/ui/sonner'
 import { SiteNav } from '@/components/site-nav'
 import { Footer } from '@/components/footer'
+import { SidebarNav } from '@/components/sidebar-nav'
+import { tools } from '@/lib/tools'
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
@@ -28,6 +30,59 @@ export default async function LocaleLayout({
   const t = await getTranslations({ locale, namespace: 'common' })
   const tLayout = await getTranslations({ locale, namespace: 'layout' })
   const tNav = await getTranslations({ locale, namespace: 'nav' })
+  const tTools = await getTranslations({ locale, namespace: 'tools' })
+
+  // Build tool groups for mobile nav drawer
+  const toolGroupsData = [
+    {
+      label: tNav('textTools'),
+      tools: tools
+        .filter((t) => t.category === 'text')
+        .map((tool) => {
+          const subKey = tool.i18nKey.replace('tools.', '')
+          const href = tool.isHomepage
+            ? locale === 'en'
+              ? '/'
+              : '/vi/'
+            : locale === 'en'
+              ? `/${tool.slug}/`
+              : `/vi/${tool.slug}/`
+          return {
+            name: tTools(`${subKey}.name` as Parameters<typeof tTools>[0]),
+            href,
+            slug: tool.slug,
+          }
+        }),
+    },
+    {
+      label: tNav('codeData'),
+      tools: tools
+        .filter((t) => t.category === 'encoding')
+        .map((tool) => {
+          const subKey = tool.i18nKey.replace('tools.', '')
+          const href = locale === 'en' ? `/${tool.slug}/` : `/vi/${tool.slug}/`
+          return {
+            name: tTools(`${subKey}.name` as Parameters<typeof tTools>[0]),
+            href,
+            slug: tool.slug,
+          }
+        }),
+    },
+    {
+      label: tNav('randomGenerators'),
+      tools: tools
+        .filter((t) => t.category === 'generator')
+        .map((tool) => {
+          const subKey = tool.i18nKey.replace('tools.', '')
+          const href = locale === 'en' ? `/${tool.slug}/` : `/vi/${tool.slug}/`
+          return {
+            name: tTools(`${subKey}.name` as Parameters<typeof tTools>[0]),
+            href,
+            slug: tool.slug,
+          }
+        }),
+    },
+  ]
 
   return (
     <NextIntlClientProvider>
@@ -50,7 +105,9 @@ export default async function LocaleLayout({
           toggleDark: tNav('toggleDark'),
           switchLocale: tNav('switchLocale'),
           menu: tNav('menu'),
+          sidebarTools: tNav('sidebarTools'),
         }}
+        toolGroups={toolGroupsData}
       />
 
       {/* Main content area with sidebar */}
@@ -71,7 +128,7 @@ export default async function LocaleLayout({
 
         {/* Sidebar column -- hidden on mobile */}
         <aside className="hidden lg:block w-72 shrink-0">
-          {/* Sidebar ad slot: 250px min-height */}
+          {/* Sidebar ad slot: 250px min-height — PRESERVE AS-IS */}
           <div
             className="min-h-[250px] w-full bg-zinc-50 dark:bg-zinc-900 flex items-center justify-center text-xs text-zinc-400 sticky top-6"
             aria-hidden="true"
@@ -79,6 +136,8 @@ export default async function LocaleLayout({
           >
             {tLayout('adPlaceholder')}
           </div>
+          {/* Sidebar tool navigation — added in Phase 07 */}
+          <SidebarNav locale={locale} />
         </aside>
       </div>
       <Footer locale={locale} />
