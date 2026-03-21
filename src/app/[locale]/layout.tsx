@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing'
 import { Toaster } from '@/components/ui/sonner'
 import { SiteNav } from '@/components/site-nav'
+import { Footer } from '@/components/footer'
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
@@ -80,6 +81,7 @@ export default async function LocaleLayout({
           </div>
         </aside>
       </div>
+      <Footer locale={locale} />
       <Toaster />
     </NextIntlClientProvider>
   )
