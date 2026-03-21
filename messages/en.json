@@ -152,7 +152,9 @@
     "randomGenerators": "Random Generators",
     "toggleDark": "Toggle dark mode",
     "switchLocale": "Switch language",
-    "menu": "Open menu"
+    "menu": "Open menu",
+    "sidebarTools": "Tools",
+    "randomGeneratorsShort": "Random"
   },
   "reverseText": {
     "tool": {

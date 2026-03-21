@@ -152,7 +152,9 @@
     "randomGenerators": "Tr\u00ECnh t\u1EA1o Ng\u1EABu nhi\u00EAn",
     "toggleDark": "Chuy\u1EC3n ch\u1EBF \u0111\u1ED9 t\u1ED1i",
     "switchLocale": "\u0110\u1ED5i ng\u00F4n ng\u1EEF",
-    "menu": "M\u1EDF menu"
+    "menu": "M\u1EDF menu",
+    "sidebarTools": "C\u00F4ng c\u1EE5",
+    "randomGeneratorsShort": "Ng\u1EABu nhi\u00EAn"
   },
   "reverseText": {
     "tool": {
